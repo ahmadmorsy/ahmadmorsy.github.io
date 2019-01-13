@@ -1,0 +1,95 @@
+
+
+h1,h2,h3,h4,h5,h6
+{
+  color: var(--ligther);
+}
+
+
+.page,body,html,p
+{
+  color: var(--gray);
+}
+
+.nav-bar,.overscroll-fix,body,form input,form textarea,html
+{
+  background-color: var(--darkest);
+}
+
+.main
+{
+  background-color: var(--darkest);
+}
+
+.block
+{
+  border: 1px solid var(--dark);
+  background-color: var(--darker);
+}
+
+.block,.title,.main
+{
+  color: var(--gray);
+}
+
+form input,form textarea
+{
+  border: 2px solid var(--darker);
+  color: var(--gray);
+}
+
+form input:focus,form textarea:focus
+{
+  border: 2px solid var(--dark);
+}
+
+#submit
+{
+  background-color: var(--dark);
+  color: var(--lighter);
+  border: 2px solid var(--dark);
+}
+
+#submit:hover
+{
+  background-color: var(--accent);
+  color: var(--lightest);
+}
+
+.footer
+{
+  background-color: var(--darkest);
+  color: var(--darkgray);
+}
+
+#nav-mode {
+border: 2px solid var(--darkgray);
+}
+
+.icon-moon {
+	transition: all .4s cubic-bezier(.54,1.6,.5,1);
+		 box-shadow: 5px 5px 0 0 var(--lighter);
+	 }
+
+
+circle
+{
+  fill: #666;
+  stroke: #fff;
+}
+
+#back2Top .icon-arrow-up
+{
+  border-top: 5px solid #fff;
+  border-right: 5px solid #fff;
+}
+
+#back2Top:hover .icon-arrow-up
+{
+  opacity: .8;
+}
+
+.dark,.light
+{
+	transition: all .4s cubic-bezier(.54,1.6,.5,1);
+}

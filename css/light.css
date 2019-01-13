@@ -10,9 +10,7 @@
   --light: #e6e6e6;
   --lighter: #f2f4f6;
   --lightest: #ffffff;
-  --accent: goldenrod;
-  --txt-color: var(--gray);
-  --text-size: 16px;
+  --accent: darkgoldenrod;
 }
 
 *,
@@ -23,7 +21,7 @@ html
   box-sizing: border-box;
   padding: 0;
   margin: 0;
-  cursor: url("../images/site/custom-cursor.svg"), auto !important;
+  cursor: url("https://ahmadmorsy.github.io/img/site/custom-cursor.svg"), auto !important;
 }
 
 html
@@ -31,7 +29,9 @@ html
   font-weight: 400;
   position: absolute;
   font-style: normal;
-  font-size: var(--text-size, 16px);
+  font-size: 16px;
+	background: var(--lighter);
+	transition: all 0.3s  cubic-bezier(0.54, 1, 0.5, 1);
   color: var(--gray);
   width: 100vw;
   overflow: auto;
@@ -51,6 +51,8 @@ body
   overflow: auto;
   background: var(--lighter);
   margin: 0;
+	transition: all 0.3s  cubic-bezier(0.54, 1, 0.5, 1);
+
 }
 
 .ovfl-hide
@@ -72,6 +74,7 @@ h6
   color: var(--darkest);
   font-weight: 600;
   margin: 20px 0;
+	pointer-events: none;
 }
 
 h1
@@ -109,11 +112,12 @@ p
   line-height: 1.5em;
   font-weight: 400;
   font-style: normal;
-  font-size: var(--text-size, 16px);
+  font-size: 16px;
   color: var(--darkgray);
   font-family: 'Helvetica Neue', sans-serif;
   text-align: left;
   margin-bottom: 20px;
+	pointer-events: none;
 }
 
 a:link,
@@ -127,22 +131,29 @@ a
   outline: none;
 }
 
+.svg-icon {
+  width: 20px;
+  height: 20px;
+}
+
+.svg-icon path,
+.svg-icon polygon,
+.svg-icon rect {
+  fill: #fff;
+}
+
+.svg-icon circle {
+  stroke: #fff;
+  stroke-width: 1;
+}
+
 .page
 {
   overflow: hidden;
   padding-bottom: 160px;
-  transition: all 0.3s var(--ease-in-quad);
+
 }
 
-.dark h1,
-.dark h2,
-.dark h3,
-.dark h4,
-.dark h5,
-.dark h6
-{
-  color: var(--lighter);
-}
 
 
 /*------------[ navigation ]---------------------*/
@@ -155,13 +166,9 @@ a
   top: 0px;
   left: 0;
   position: fixed;
+	transition: all 0.3s  cubic-bezier(0.54, 1, 0.5, 1);
   background: var(--lighter);
   z-index: -1;
-}
-
-.dark .overscroll-fix
-{
-  background-color: var(--darkest);
 }
 
 .nav-bar
@@ -295,7 +302,7 @@ a
   height: 4px;
   margin: 4px;
   opacity: 1;
-  background-color: var(--test-color, #717276);
+  background-color: var(--darkgray);
   transition: all 0.2s;
 }
 
@@ -303,7 +310,7 @@ a
 .nav-icon:hover .bar2,
 .nav-icon:hover .bar3
 {
-  background-color: darkgoldenrod;
+  background-color: var(--accent);
 }
 
 .nav-icon.change .bar1
@@ -350,8 +357,8 @@ a
   left: 0;
   opacity: 0;
   z-index: -1;
-  -webkit-transform: translateZ(0);
-  transform: translateZ(0);
+  -webkit-transform: translateZ(0.1);
+  transform: translateZ(0.1);
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   transition: all 0.25s ease;
@@ -361,14 +368,13 @@ a
 {
   width: 200px;
   height: 40px;
-  position: relative;
   list-style-type: none;
   text-align: center;
-  -webkit-transform: translate3d(0, -100%, 0);
-  transform: translate3d(0, -100%, 0);
   will-change: transform;
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
+	-webkit-transform: translateY(-100%);
+  transform: translateY(-100%);
   transition: -webkit-transform 0.35s ease 0.3s;
   transition: transform 0.35s ease 0.3s;
   transition: transform 0.35s ease 0.3s, -webkit-transform 0.35s ease 0.3s;
@@ -391,32 +397,31 @@ a
 #menu.show
 {
   opacity: 1;
-  position: fixed;
   z-index: 204;
 }
 
 #menu.show li:first-child
 {
-  -webkit-transform: translate3d(0, 0%, 0);
-  transform: translate3d(0, 0%, 0);
+  -webkit-transform: translateY(0);
+  transform: translateY(0);
 }
 
 #menu.show li:nth-child(2)
 {
-  -webkit-transform: translate3d(0, 25%, 0);
-  transform: translate3d(0, 25%, 0);
+  -webkit-transform: translateY(25%);
+  transform: translateY(25%);
 }
 
 #menu.show li:nth-child(3)
 {
-  -webkit-transform: translate3d(0, 50%, 0);
-  transform: translate3d(0, 50%, 0);
+  -webkit-transform: translateY(50%);
+  transform: translateY(50%);
 }
 
 #menu.show li:nth-child(4)
 {
-  -webkit-transform: translate3d(0, 75%, 0);
-  transform: translate3d(0, 75%, 0);
+  -webkit-transform: translateY(75%);
+  transform: translateY(75%);
 }
 
 #menu.show li a
@@ -453,13 +458,7 @@ a
   -webkit-backface-visibility: hidden;
   backface-visibility: hidden;
   text-align: right;
-  background: var(--lightest);
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.1), 0 6px 6px -2px rgba(0, 0, 0, 0.09);
-}
-
-.dark .header
-{
-  background: var(--dark);
 }
 
 .header-text
@@ -488,16 +487,11 @@ a
 .main
 {
   opacity: 1;
-  background: var(--lighter);
+	background-color: var(--lighter);
   min-height: 800px;
-  z-index: 1;
   padding-bottom: 0px;
-  transition: all 0.3s var(--ease-in-quad);
-}
+	transition: all 0.3s  cubic-bezier(0.54, 1, 0.5, 1);
 
-.dark .main
-{
-  background: var(--darkest);
 }
 
 .block
@@ -506,18 +500,12 @@ a
   margin-top: 20px;
   width: 100%;
   background-color: var(--lightest);
-  color: var(--text-color);
+  color: var(--darkgray);
   overflow: hidden;
-  transition: all 0.3s var(--ease-in-quad);
   box-shadow: 0 4px 4px -4px rgba(0, 0, 0, 0.1), 0 6px 6px -2px rgba(0, 0, 0, 0.09);
   border: 1px solid var(--light);
-}
+	transition: all 0.3s  cubic-bezier(0.54, 1, 0.5, 1);
 
-.dark .block
-{
-  border: 1px solid var(--dark);
-  background: var(--darker);
-  color: var(--gray);
 }
 
 .invitation,
@@ -545,11 +533,6 @@ form > div
   font-size: 1rem;
 }
 
-.dark .title
-{
-  color: var(--gray);
-}
-
 input,
 textarea
 {
@@ -559,17 +542,9 @@ textarea
   border: 2px solid var(--light);
   background-color: var(--lighter);
   -webkit-transition: 0.3s;
-  transition: all 0.3s ease;
   outline: none;
 }
 
-.dark form input,
-.dark form textarea
-{
-  background-color: var(--dark);
-  border: 2px solid var(--darker);
-  color: var(--gray);
-}
 
 form > textarea
 {
@@ -588,45 +563,32 @@ form textarea:focus
 {
   text-align: center;
   background-color: #fff;
-  border: 3px solid #000;
+  border: 2px solid #000;
   color: #000;
   width: 30%;
-  -webkit-transition: 0.2s;
-  transition: background-color 0.2s linear;
+
 }
 
-#submit:hover,
-.dark #submit:hover
+#submit:hover
+
 {
   background-color: #000;
   color: #fff;
-}
-
-.dark #submit
-{
-  background-color: var(--darkest);
-  color: var(--lighter);
-  border: 2px solid var(--dark);
 }
 
 .footer
 {
   padding: 100px 40px;
   width: 100vw;
-  height: 100px;
-  position: fixed;
+	height:100px;
+	position:fixed;
   left: 0;
   bottom: 0;
-  z-index: -1;
+	z-index:-1;
   text-align: center;
   color: #999;
-  background-color: var(--lighter);
-}
+	background-color:var(--lighter);
 
-.dark .footer
-{
-  background-color: var(--darkest);
-  color: var(--darkgray);
 }
 
 .blink
@@ -658,45 +620,40 @@ form textarea:focus
   opacity: 0;
 }
 
-#nav-mode,
-#circle
-{
-  transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
-}
-
 #nav-mode
 {
-  width: 24px;
-  height: 24px;
+  width: 26px;
+  height: 26px;
   border-radius: 24px;
   margin-right: 4px;
   margin-left: 4px;
   right: 55px;
-  border: 2px solid var(--lighter);
-  background: var(--lighter);
+	overflow: hidden;
+  border: 2px solid var(--darkgray);
+  background: var(--darkest);
   position: absolute;
   z-index: 250;
+	transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
 }
 
-#nav-mode #circle
-{
-  margin-top: 2px;
-  margin-left: 2px;
-  width: 16px;
-  height: 16px;
-  border-radius: 50%;
-  border: 2px solid var(--darkest);
+#nav-mode:hover {
+	cursor:pointer;
+	border: 2px solid var(--gray);
 }
 
-#nav-mode.switched
-{
-  background: var(--darker);
-}
+.icon-moon {
+		 width: 18px;
+		 height: 18px;
+		 position: absolute;
+		 top:-3px;
+		 right:7px;
+		 border-radius: 50%;
+		 background-color: var(--darkest);
+		 box-shadow: 5px 5px 0 0 var(--darkgray);
+		 transition: all 0.4s cubic-bezier(0.54, 1.6, 0.5, 1);
 
-#nav-mode.switched #circle
-{
-  border: 2px solid var(--lighter);
-}
+	 }
+
 
 ::-moz-selection
 {
@@ -775,18 +732,6 @@ form textarea:focus
 #back2Top:hover .icon-arrow-up
 {
   opacity: 0.8;
-}
-
-.dark circle
-{
-  fill: #666;
-  stroke: #fff;
-}
-
-.dark #back2Top .icon-arrow-up
-{
-  border-top: 5px solid #fff;
-  border-right: 5px solid #fff;
 }
 
 .bg--grid-dot
@@ -1296,25 +1241,12 @@ form textarea:focus
 
 .dark
 {
-  --bg-color: var(--darkest);
-  --section-bg-color: var(--darker);
-  --box-bg-color: var(--darker);
-  --border-color: var(--dark);
-  --txt-color: var(--gray);
-  transition: all 0.3s linear;
+
+	transition: all 0.3s  cubic-bezier(0.54, 1, 0.5, 1);
 }
 
 .light
 {
-  --bg-color: var(--lighter);
-  --section-bg-color: var(--lighter);
-  --box-bg-color: var(--lightest);
-  --border-color: var(--light);
-  --txt-color: var(--darkgray);
-  transition: all 0.3s linear;
-}
 
-.dark
-{
-  background-color: var(--darkest);
+	transition: all 0.3s  cubic-bezier(0.54, 1, 0.5, 1);
 }
