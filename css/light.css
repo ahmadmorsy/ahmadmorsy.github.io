@@ -508,6 +508,134 @@ a
 
 }
 
+.buttons {
+
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  width: 100%;
+  margin-bottom: 20px;
+
+}
+
+.btn {
+  border: 2px solid #777;
+  position: relative;
+  outline: none;
+  border-radius: 24px;
+  height: 24px;
+  padding: 0px 12px 2px 20px;
+  text-align: left;
+  margin: 4px;
+  background-color: transparent;
+  color: #777;
+  cursor: pointer;
+  font-size: 14px;
+  font-weight: 500;
+  text-transform: lowercase;
+  transition: all 0.2s ease;
+}
+
+.btn:before {
+  content: "";
+  display: block;
+  position: absolute;
+  top: 7px;
+  left: 6px;
+  height: 6px;
+  width: 6px;
+  border-radius: 6px;
+  background-color: var(--bg-color);
+  border: 1px solid #777;
+
+
+}
+
+.btn:hover,
+.btn.active {
+  background-color: #777;
+  color: #fff;
+}
+.isotope {
+
+  display: flex;
+width:96vw;
+
+
+}
+
+
+.isotope-item {
+
+  color: #ffffff;
+  text-align: center;
+  background-color: #000000;
+  font-size: 18px;
+}
+
+.isotope-item img {
+  position: relative;
+  outline: 2px solid #fff;
+  outline-offset: -2px;
+  width: 100%;
+  vertical-align: top;
+  opacity: 1;
+  transition: opacity 0.3s ease;
+}
+
+.isotope-item figcaption {
+  position: absolute;
+  top: 40%;
+  right: 0;
+  width: 100%;
+  height: 100%;
+  text-align: center;
+  line-height: 100%;
+  z-index: 1;
+  opacity: 0;
+  padding: 30% 10%;
+}
+
+.isotope-item h3,
+.isotope-item p {
+  line-height: 100%;
+  margin-bottom: 4%;
+}
+
+.isotope-item h3 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #fff;
+  text-transform: uppercase;
+}
+
+.isotope-item p {
+  font-size: 0.8em;
+  font-weight: 400;
+  color: #999;
+  text-transform: lowercase;
+
+}
+
+.isotope-item a {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  right: 0;
+  left: 0;
+  z-index: 1;
+}
+
+.isotope-item:hover img,
+.isotope-item.hover img {
+  opacity: 0.3;
+}
+
+.isotope-item:hover figcaption,
+.isotope-item.hover figcaption {
+  opacity: 1;
+}
+
 .invitation,
 .address
 {
@@ -576,7 +704,7 @@ form textarea:focus
   color: #fff;
 }
 
-.footer
+footer
 {
   padding: 100px 40px;
   width: 100vw;
@@ -904,7 +1032,7 @@ form textarea:focus
 
   .isotope-item
   {
-    width: 25%;
+    width: 20vw;
     margin: 0;
   }
 
@@ -920,7 +1048,7 @@ form textarea:focus
     width: 58%;
   }
 
-  .footer
+  footer
   {
     padding: 60px 10vw;
   }
@@ -957,7 +1085,7 @@ form textarea:focus
 
   .isotope-item
   {
-    width: 50%;
+    width: 45vw;
     margin: 0;
   }
 
@@ -968,7 +1096,7 @@ form textarea:focus
     width: 100%;
   }
 
-  .footer
+  footer
   {
     padding: 60px 5vw;
   }
@@ -1021,7 +1149,7 @@ form textarea:focus
 
   .isotope-item
   {
-    width: 100%;
+    width: 96vw;
     margin: 0;
   }
 
@@ -1036,7 +1164,7 @@ form textarea:focus
     font-size: 24px;
   }
 
-  .footer
+  footer
   {
     padding: 60px 2vw;
   }
@@ -1104,7 +1232,7 @@ form textarea:focus
     font-size: 28px;
   }
 
-  .footer
+  footer
   {
     padding: 60px 20px;
   }
