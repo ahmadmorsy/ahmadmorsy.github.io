@@ -11,120 +11,128 @@
         <meta name="author" content="Ahmad Morsy">
         <link rel="shortcut icon" href="../favicon.ico">
 
-  
+
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel="stylesheet" href="css/light.css">
 
-  
-      <link rel="stylesheet" href="css/main.css">
 
-			<link rel="stylesheet" href="css/am-colors.css">
+      <script type="text/javascript">
+        (function(){
+          var link = document.createElement('link');
+          link.setAttribute('id', 'dark-css');
+          link.setAttribute('rel','stylesheet');
+          document.head.appendChild(link);
+        var style=localStorage.getItem('stylesheet');
+        if(style){
+          document.getElementById('dark-css').setAttribute('href',style);
+        }})()
+      </script>
+
+<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
+
+
+
 </head>
 
 <body>
-		<!--[if lte IE 9]>
-    <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-  <![endif]-->
 
+  <div class="page">
+	<div class="overscroll-fix"></div>
 
+	<div class="nav-bar">
 
-	<div class="page">
-		<div class="overscroll-fix"></div>
-		<div class="nav-bar">
-			<div class="nav-logo">
-				<a href=""><img src="http://ahmadmorsy.github.io/img/am-logo.svg" alt="am-logo" class="outliner" /></a>
-				<div class="logo-type">AHMAD MORSY</div>
-			</div>
-			
-			<div class="page-title">header</div>
-			<div class="nav-spacer"></div>
-			
-			<div id="nav-mode" data-theme="dark">
-				<div id="circle"></div>
-
-			</div>
-			<div class="nav-icon">
-				<div class="bar1"></div>
-				<div class="bar2"></div>
-				<div class="bar3"></div>
-			</div>
+		<div class="nav-logo">
+			<a href="#"><img src="http://ahmadmorsy.github.io/img/am-logo.svg" alt="am-logo" class="outliner" /></a>
+			<div class="logo-type">AHMAD MORSY</div>
 		</div>
-		<div id="menu">
-			<ul>
-				<li class="current"><a href="#">home</a></li>
-				<li><a href="about.html">about</a></li>
-				<li><a href="work.html">work</a></li>
-				<li><a href="contact.html">contact</a></li>
+
+		<div class="page-title" style="color:#475461">HOME</div>
+		<div class="nav-spacer"></div>
+
+		<div id="nav-mode">
+			<div class="icon-moon"></div>
+		</div>
+
+		<div class="nav-icon">
+			<div class="bar1"></div>
+			<div class="bar2"></div>
+			<div class="bar3"></div>
+		</div>
+
+	</div>
+
+	<div class="nav-page">
+		<div class="nav-cover">
+			<ul class="nav-links">
+				<li> <a class="nav-link current" href="#">HOME</a></li>
+				<li> <a class="nav-link" href="#">ABOUT</a></li>
+				<li> <a class="nav-link" href="#">WORK</a></li>
+				<li> <a class="nav-link" href="#">CONTACT</a></li>
 			</ul>
 		</div>
-		
-		<div class="header">
-			<svg class="progress-ring" width="64" height="64">
-  <circle
-    class="progress-ring__circle"
-    stroke="darkgoldenrod"
-    stroke-width="5"
-    fill="transparent"
-    r="30"
-    cx="32"
-    cy="32"/> 	
-</svg>
-			<div class="scrolled">00</div>
+	</div>
 
-			<input value="25" type="number" min="0" max="100" placeholder="progress">
-			<div class="header-text">
-				<span>h</span>
-				<span>e</span>
-				<span>a</span>
-				<span>d</span>
-				<span>e</span>
-				<span>r</span>
-			</div>
-		</div>
-		<div class="main">
-			<div class="block">
-				<h4>Title</h4>
-				<p>Lorem ipsum dolor sit amet dui netus tempor etiam. Convallis cursus viverra accumsan curabitur suscipit. Risus placerat penatibus. Velit volutpat wisi. Penatibus varius lacus nullam volutpat proin donec pellentesque elementum velit sit proin taciti quis et suscipit praesent mi nunc posuere amet. Cursus eu quam. </p>
-			</div>
-			<div class="block">
-				<h4>Title</h4>
-				<p>Lorem ipsum dolor sit amet dui netus tempor etiam. Convallis cursus viverra accumsan curabitur suscipit. Risus placerat penatibus. Velit volutpat wisi. Penatibus varius lacus nullam volutpat proin donec pellentesque elementum velit sit proin taciti quis et suscipit praesent mi nunc posuere amet. Cursus eu quam. </p>
-			</div>
-				<div class="block">
-				<h4>Title</h4>
-				<p>Lorem ipsum dolor sit amet dui netus tempor etiam. Convallis cursus viverra accumsan curabitur suscipit. Risus placerat penatibus. Velit volutpat wisi. Penatibus varius lacus nullam volutpat proin donec pellentesque elementum velit sit proin taciti quis et suscipit praesent mi nunc posuere amet. Cursus eu quam. </p>
-			</div>
-				<div class="block">
-				<h4>Title</h4>
-				<p>Lorem ipsum dolor sit amet dui netus tempor etiam. Convallis cursus viverra accumsan curabitur suscipit. Risus placerat penatibus. Velit volutpat wisi. Penatibus varius lacus nullam volutpat proin donec pellentesque elementum velit sit proin taciti quis et suscipit praesent mi nunc posuere amet. Cursus eu quam. </p>
-			</div>
-				<div class="block">
-				<h4>Title</h4>
-				<p>Lorem ipsum dolor sit amet dui netus tempor etiam. Convallis cursus viverra accumsan curabitur suscipit. Risus placerat penatibus. Velit volutpat wisi. Penatibus varius lacus nullam volutpat proin donec pellentesque elementum velit sit proin taciti quis et suscipit praesent mi nunc posuere amet. Cursus eu quam. </p>
+	<div class="header bg--gradient-darkgray">
+
+		<div id="back2Top">
+
+			<svg class="progress-ring" width="58" height="58">
+        <circle
+          stroke="#000"
+          stroke-width="5"
+          fill="#999"
+          r="24"
+          cx="30"
+          cy="30"/>
+      </svg>
+
+			<div class="icon-arrow-up">
+
 			</div>
 
 		</div>
-		<div class="footer">
-			<div class="footer-text">&copy; copy rights</div>
-		 
-			
+
+		<input value="25" type="number" min="0" max="100" placeholder="progress">
+		<div class="header-text">
+			<span>H</span>
+			<span>O</span>
+			<span>M</span>
+			<span>E</span>
 		</div>
 	</div>
-</body>
+	<div class="main">
+		<div class="block">
 
-</html>
-<script src="js/vendor/modernizr-3.6.0.min.js"></script>	
-<script src="https://code.jquery.com/jquery-3.3.1.min.js" integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8=" crossorigin="anonymous"></script>
-  <script>window.jQuery || document.write('<script src="js/vendor/jquery-3.3.1.min.js"><\/script>')</script>
-  <script src="js/plugins.js"></script>
-	<script src="js/main.js"></script>
-	
+			<h4>Title</h4>
+			<p>Lorem ipsum dolor sit amet dui netus tempor etiam. Convallis cursus viverra accumsan curabitur suscipit. Risus placerat penatibus. Velit volutpat wisi. Penatibus varius lacus nullam volutpat proin donec pellentesque elementum velit sit proin taciti
+				quis et suscipit praesent mi nunc posuere amet. Cursus eu quam. </p>
+		</div>
+
+	</div>
+	<footer>
+		<div class="footer-text">Copyright.2018 Ahmad Morsy. All Rights Reserved</div>
+
+	</footer>
+</div>
+
+<div id="wait-wrapper">
+	<div id="wait"></div>
+	<div class="wait-section">
+		<p class="load-message">loading ...</p>
+
+	</div>
+
+</div>
+
+  <script src="js/main.js"></script>
+
+
 	 <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
 	 <script>
 			window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
 			ga('create', 'UA-XXXXX-Y', 'auto'); ga('send', 'pageview')
 		</script>
 		<script src="https://www.google-analytics.com/analytics.js" async defer></script>
-
 
 
 </body>

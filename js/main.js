@@ -1,5 +1,12 @@
+$(document).ready(function() {
+	setTimeout(function() {
+		$("#wait-wrapper").css("display","none");
+		$("body").addClass("loaded");
+		$(".load-message").text("loaded");
+	}, 3000);
+});
 
-var circle = document.querySelector('circle');
+var circle = document.querySelector("circle");
 var radius = circle.r.baseVal.value;
 var circumference = radius * 2 * Math.PI;
 var area = radius * radius * Math.PI;
@@ -10,156 +17,176 @@ circle.style.strokeDashoffset = `${circumference}`;
 /*-------------darkmode---------------*/
 
 function nightMode() {
-	if (localStorage.getItem('stylesheet')) {
+	if (localStorage.getItem("stylesheet")) {
 		localStorage.clear();
-		document.getElementById('dark-css').setAttribute('href', ' ');
+		document.getElementById("dark-css").setAttribute("href", " ");
 	} else {
-		localStorage.setItem('stylesheet', 'css/dark.css');
-		document.getElementById('dark-css').setAttribute('href', localStorage.getItem('stylesheet'));
+		localStorage.setItem("stylesheet", "css/dark.css");
+		document
+			.getElementById("dark-css")
+			.setAttribute("href", localStorage.getItem("stylesheet"));
 	}
 }
 
-document.getElementById('nav-mode').addEventListener('click', nightMode);
+document.getElementById("nav-mode").addEventListener("click", nightMode);
 
 /*-------------guides---------------*/
 
-$('.outliner').on('click', function () {
-
-    $('div').toggleClass('guides');
-
+$(".outliner").on("click", function() {
+	$("div").toggleClass("guides");
 });
 
 /*-------------nav menu---------------*/
 
-$(document).ready(function () {
+$(document).ready(function() {
+	var last, diff;
 
-    if ($(".nav-icon").hasClass(" ") || $("#menu").hasClass("show")) {
-        $("#menu").removeClass("show");
-    }
-});
+	$(".nav-icon").click(function(event) {
+		diff = event.timeStamp - last;
 
-$(".nav-icon").click(function () {
-    $(this).toggleClass("change");
-    $("#menu").toggleClass("show");
-    $("body").css("overflow","hidden");
-});
+		if (diff >= 1000) {
+			$(".nav-icon").prop("pointer-events", "normal");
+			$(this).toggleClass("change");
+			$(".nav-page").toggleClass("is-visible");
+		} else {
+			$(".nav-icon").prop("pointer-events", "none");
+		}
 
-$('body').mouseleave(function () {
+		last = event.timeStamp;
+	});
+
+	$("body").mouseleave(function() {
+		$(".nav-icon").removeClass("change");
+		$(".nav-page").removeClass("is-visible");
+		$("body").css("overflow", "auto");
+	});
+
+	/*
+
+$("body").click(function () {
     $(".nav-icon").removeClass("change");
-    $("#menu").removeClass("show");
+		$(".nav-page").removeClass("is-visible");
     $("body").css("overflow","auto");
 });
 
-$("#menu").click(function () {
-    $(".nav-icon").removeClass("change");
-    $("#menu").removeClass("show");
-    $("body").css("overflow","auto");
-});
 
-$('#menu li').on('click', 'a', function () {
+	$('.nav-link').on('click', function () {
 
-    $('#menu li').removeClass('current');
+    $('.nav-link').removeClass('current');
+		$(".nav-page").removeClass("is-visible");
     $(this).addClass('current');
     $(".nav-icon").removeClass('change');
-    $("#menu").removeClass('show');
     $("body").css("overflow","hide");
+
 
 });
 
 /*-------------shrinking title into nav-bar---------------*/
 
-$(document).ready(function () {
-
-    $(window).scroll(function () {
-
-      var scrollHeight = $(this).scrollTop();
+	$(document).ready(function() {
+		$(window).scroll(function() {
+			var scrollHeight = $(this).scrollTop();
 			var windowHeight = $(window).height();
 			var totalHeight = $(document).height();
 
-        $(".scrolled").html(scrollHeight);
+			$(".scrolled").html(scrollHeight);
 
-			 $(".header input").attr('value', scrollHeight);
+			$(".header input").attr("value", scrollHeight);
 
+			const input = document.querySelector(".header input");
+			if (input.value < totalHeight && input.value > 0) {
+				setProgress(input.value);
+			}
 
-const input = document.querySelector('.header input');
- if (input.value < totalHeight && input.value > 0) {
-    setProgress(input.value);
-  }
+			function setProgress(percent) {
+				var offset =
+					circumference -
+					scrollHeight * circumference / (totalHeight - windowHeight);
+				circle.style.strokeDashoffset = offset;
+			}
 
-function setProgress(percent) {
-  var offset = circumference - (scrollHeight * circumference / (totalHeight - windowHeight))  ;
-  circle.style.strokeDashoffset = offset;
-}
+			/*-------------page title fade in nav-bar---------------*/
+			/*-------------scroll progress ring---------------*/
 
-/*-------------page title fade in nav-bar---------------*/
-/*-------------scroll progress ring---------------*/
+			$(".header-text").css("opacity", (180 - scrollHeight) / 150);
 
+			if (scrollHeight > 250) {
+				$(".page-title").css("opacity", "1");
+				$("#back2Top").fadeIn();
+				$(".progress-ring").fadeIn();
+			} else {
+				$(".page-title").css("opacity", "0");
+				$("#back2Top").fadeOut();
+				$(".progress-ring").fadeOut();
+			}
 
-$('.header-text').css("opacity", ((180 - scrollHeight)/150));
+			/*-------------scroll effects---------------*/
 
+			var dyScroll = 0.1 * scrollHeight;
 
+			if (scrollHeight > 0 && scrollHeight < 250) {
+				$(".header-text span:first-child").css(
+					"transform",
+					"translateY(" + -6 * dyScroll + "px)"
+				);
 
-        if (scrollHeight > 250) {
+				$(".header-text span:nth-child(2)").css(
+					"transform",
+					"translateY(" + -10 * dyScroll + "px)"
+				);
 
-            $('.page-title').css('opacity', '1');
-            $('#back2Top').fadeIn();
-          $('.progress-ring').fadeIn();
+				$(".header-text span:nth-child(3)").css(
+					"transform",
+					"translateY(" + -7 * dyScroll + "px)"
+				);
 
+				$(".header-text span:nth-child(4)").css(
+					"transform",
+					"translateY(" + -4 * dyScroll + "px)"
+				);
 
-        } else {
+				$(".header-text span:nth-child(5)").css(
+					"transform",
+					"translateY(" + -6 * dyScroll + "px)"
+				);
 
-            $('.page-title').css('opacity', '0');
-            $('#back2Top').fadeOut();
-          $('.progress-ring').fadeOut();
+				$(".header-text span:nth-child(6)").css(
+					"transform",
+					"translateY(" + -10 * dyScroll + "px)"
+				);
 
-        }
+				$(".header-text span:nth-child(7)").css(
+					"transform",
+					"translateY(" + -10 * dyScroll + "px)"
+				);
 
+				$(".header-text span:nth-child(8)").css(
+					"transform",
+					"translateY(" + -7 * dyScroll + "px)"
+				);
 
-/*-------------scroll effects---------------*/
+				$(".header-text span:nth-child(9)").css(
+					"transform",
+					"translateY(" + -4 * dyScroll + "px)"
+				);
 
-var dyScroll = 0.1 * scrollHeight;
+				$(".header-text span:nth-child(10)").css(
+					"transform",
+					"translateY(" + -6 * dyScroll + "px)"
+				);
+			} else {
+				$(".header-text span").css("transform", "translateY(" + 0 + ")");
+			}
+		});
+	});
 
-  if ((scrollHeight > 0) && (scrollHeight < 250)) {
+	/*------------- back to top button function ---------------*/
 
-
-    $('.header-text span:first-child').css("transform", "translateY(" + -6 * dyScroll + "px)");
-
-    $('.header-text span:nth-child(2)').css("transform", "translateY(" + -10 * dyScroll + "px)");
-
-    $('.header-text span:nth-child(3)').css("transform", "translateY(" + -7 * dyScroll + "px)");
-
-    $('.header-text span:nth-child(4)').css("transform", "translateY(" + -4 * dyScroll + "px)");
-
-    $('.header-text span:nth-child(5)').css("transform", "translateY(" + -6 * dyScroll + "px)");
-
-    $('.header-text span:nth-child(6)').css("transform", "translateY(" + -10 * dyScroll + "px)");
-
-    $('.header-text span:nth-child(7)').css("transform", "translateY(" + -10 * dyScroll + "px)");
-
-    $('.header-text span:nth-child(8)').css("transform", "translateY(" + -7 * dyScroll + "px)");
-
-    $('.header-text span:nth-child(9)').css("transform", "translateY(" + -4 * dyScroll + "px)");
-
-    $('.header-text span:nth-child(10)').css("transform", "translateY(" + -6 * dyScroll + "px)");
-
-
-} else {
-
-  $('.header-text span').css("transform","translateY("+ 0 + ")" );
-}
-
+	$(document).ready(function() {
+		$("#back2Top").click(function(event) {
+			event.preventDefault();
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+			return false;
+		});
+	});
 });
-});
-
-/*------------- back to top button function ---------------*/
-
-
-$(document).ready(function() {
-    $("#back2Top").click(function(event) {
-        event.preventDefault();
-        $("html, body").animate({ scrollTop: 0 }, "slow");
-        return false;
-    });
-
-});
- /*Scroll to top when arrow up clicked END*/
