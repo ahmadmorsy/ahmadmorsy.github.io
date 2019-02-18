@@ -1,10 +1,4 @@
-// $(document).ready(function () {
-// 	setTimeout(function () {
-// 		$("#wait-wrapper").css("display", "none");
-// 		$("body").addClass("loaded");
-// 		$(".load-message").text("loaded");
-// 	}, 3000);
-// });
+
 
 var circle = document.querySelector("circle");
 var radius = circle.r.baseVal.value;
@@ -56,6 +50,8 @@ $(document).ready(function() {
 			console.log(ev.target.href);
 			document.body.classList.remove("loaded");
 			document.body.classList.add("loading");
+      document.body.classList.add(ev.target.href);
+
 			document.body.addEventListener(
 				"transitionend",
 				() => (window.location = ev.target.href)
