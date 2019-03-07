@@ -13,11 +13,47 @@
 <link rel="stylesheet" href="https://use.typekit.net/xlk7nce.css">
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet" type="text/css">
+<link href="css/work.css" rel="stylesheet" type="text/css">
+
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
+
+<script type="text/javascript">
+$(function () {
+
+  var filterList = {
+
+    init: function () {
+
+      // MixItUp plugin
+      // http://mixitup.io
+      $('#portfoliolist').mixItUp({
+        selectors: {
+          target: '.portfolio',
+          filter: '.filter'
+        },
+        load: {
+          filter: '.print'
+        }
+      });
+
+    }
+
+  };
+
+  // Run the show!
+  filterList.init();
+
+
+});
+</script>
+
 
 </head>
 
 <body id="work">
-<div class="page">
+
+  <div class="page parallax">
     <header>
       <div class="overscroll-fix"></div>
       <div class="nav-bar">
@@ -28,7 +64,7 @@
         <div class="page-title" style="color: rgb(71, 84, 97); opacity: 0;">WORK</div>
         <div class="nav-spacer"></div>
         <div id="nav-mode">
-          <div class="icon-moon"></div>
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><path d="M283.211 512c78.962 0 151.079-35.925 198.857-94.792 7.068-8.708-.639-21.43-11.562-19.35-124.203 23.654-238.262-71.576-238.262-196.954 0-72.222 38.662-138.635 101.498-174.394 9.686-5.512 7.25-20.197-3.756-22.23A258.156 258.156 0 0 0 283.211 0c-141.309 0-256 114.511-256 256 0 141.309 114.511 256 256 256z"/></svg>
         </div>
         <div class="nav-icon">
           <div class="bar1"></div>
@@ -46,659 +82,658 @@
           </ul>
         </div>
       </div>
-      <div class="header bg--gradient-bluegreen">
-        <div id="back2Top" style="display: none;">
-          <svg class="progress-ring" width="58" height="58" style="display: none;">
-        <circle stroke="#000" stroke-width="5" fill="#666" r="24" cx="30" cy="30" style="stroke-dasharray: 0, 0; stroke-dashoffset: 0;"></circle>
-      </svg>
-          <div class="icon-arrow-up"> </div>
-        </div>
-        <input value="0" type="number" min="0" max="100">
-        <div class="header-text"><span class="prlx1">w</span><span class="prlx2">o</span><span class="prlx3">r</span><span class="prlx4">k</span>
-        </div>
+      <div class="header">
+        <div class="header-img">
+          <img src="img/portfolio/lg/pattern-06-lg.png" alt="" width="100%" height="auto">
+
       </div>
+
+
+        <div class="header-title">
+  <div class="object-wrapper speed-3">
+    <div class="object object-1"></div>
+  </div>
+  <div class="object-wrapper speed-2">
+    <div class="object object-2">w</div>
+  </div>
+  <div class="object-wrapper speed-1">
+    <div class="object object-3">o</div>
+  </div>
+  <div class="object-wrapper speed-2">
+    <div class="object object-4">r</div>
+  </div>
+  <div class="object-wrapper speed-3">
+    <div class="object object-5">k</div>
+  </div>
+  <div class="object-wrapper speed-2">
+    <div class="object object-6"></div>
+  </div>
+
+      </div>
+    </div>
     </header>
+
 
   <div class="main">
     <div class="block">
       <p>Below is a collection of selected work I have done, and projects I have completed within the last five years. The collection contains a portfolio of school projects, commercial work and personal artwork.</p>
       <p>I tried to sort and group the projects based on their categories, but in art every aspect seems to blend in with the rest to create a new piece or form.</p>
     </div>
-    <div class="block">
-      <div class="buttons">
-          <button class="btn active" data-filter="*">All</button>
-          <button class="btn" data-filter=".identity">Identity</button>
-          <button class="btn" data-filter=".logo">Logo</button>
-          <button class="btn" data-filter=".layout">Layout</button>
-          <button class="btn" data-filter=".print">Print</button>
-          <button class="btn" data-filter=".type">Type</button>
-          <button class="btn" data-filter=".motion">Motion</button>
-          <button class="btn" data-filter=".drawing">Drawing</button>
-          <button class="btn" data-filter=".illustration">Illustration</button>
-          <button class="btn" data-filter=".mixed">Mixed</button>
-          <button class="btn" data-filter=".public">Public</button>
-          <button class="btn" data-filter=".three">3-D</button>
+    <div class="block block--full">
+
+
+
+      <div id="filters"  class="clearfix">
+          <button class="filter active" data-filter="*">All</button>
+          <button class="filter" data-filter=".identity">Identity</button>
+          <button class="filter" data-filter=".logo">Logo</button>
+          <button class="filter" data-filter=".layout">Layout</button>
+          <button class="filter" data-filter=".print">Print</button>
+          <button class="filter" data-filter=".type">Type</button>
+          <button class="filter" data-filter=".motion">Motion</button>
+          <button class="filter" data-filter=".drawing">Drawing</button>
+          <button class="filter" data-filter=".illustration">Illustration</button>
+          <button class="filter" data-filter=".mixed">Mixed</button>
+          <button class="filter" data-filter=".public">Public</button>
+          <button class="filter" data-filter=".three">3-D</button>
       </div>
+
     </div>
 
-      <div class="isotope">
+<div class="block block--full">
+      <div id="portfoliolist">
 
-          <div class="isotope-item three">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/clay-hand-yellow.jpg" alt=" ">
-              </div>
+
+        <div class="portfolio three" data-cat="three">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/clay-hand-yellow.jpg" alt=" ">
+          </div>
+          <div class="card-info">
+            <p class="card-title">Reaching Out</p>
+            <p class="card-details">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+        <div class="portfolio  mixed" data-cat="mixed">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-01.jpg" alt=" ">
+          </div>
+          <div class="title--small">Reaching Out</div>
+          <div class="subtitle--small">Clay Hand Sculpture</div>
+        </div>
+          </div>
+        <div class="portfolio  mixed" data-cat="mixed">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-02.jpg" alt=" ">  </div>
               <div class="title--small">Reaching Out</div>
               <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div>
+            </div></div>
+        <div class="portfolio  mixed" data-cat="mixed">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-03.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio  mixed" data-cat="mixed">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-04.jpg" alt="">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio  mixed" data-cat="mixed">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-05.jpg" alt=" "></div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio  mixed" data-cat="mixed">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-06.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/contra-posto.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/elephant-comfort-1of3.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-01.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-011.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-012.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-013.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-02.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-03.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-04.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-05.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-06.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-08.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-09.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio three" data-cat="three">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/eye-in-fear.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/eye-on-me.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio print layout">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-blue-01.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio print layout">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-blue-02.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio print layout">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-bw-01.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio print layout">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-bw-02.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio print layout">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-green.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio print layout">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-multi.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio print layout">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-pink-01.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio print layout">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-pink-02.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio three" data-cat="three">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/hope-leaves.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio type layout print illustration">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/judge-not-blue.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio type layout print illustration">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/judge-not-purple.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio type layout print illustration">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/judge-not-red.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/king-of-nothing.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio three" data-cat="three">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/life-poster.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/meeting.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio three print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/mood-swing-01.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio three print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/mood-swing-02.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/mother-aphrodite-color.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/mystears.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/oblivion.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/organometric-01.png" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern01.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern08.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern09.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern10.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern11.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern12.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern13.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern14.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern15.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern16.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern17.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern18.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern19.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/playful-moments.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio layout print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/rape-poster.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/raven-head.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/sad-face.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/shade-comfort-3of3.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/shadowed.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio layout print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/shapology.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio three" data-cat="three">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/string-art.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/suspect.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/tea-n-berry.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-01.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-02.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-03.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-04.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-05.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-06.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-07.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-08.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio illustration print" data-cat="print">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-09.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/time-1of3.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/time-2of3.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/time-3of3.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/too-late.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/waiting.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
+        <div class="portfolio drawing" data-cat="drawing">
+          <div class="card">
+            <div class="card-image">
+            <img src="https://ahmadmorsy.com/images/portfolio/200px/wisdom-comfort-2of3.jpg" alt=" ">  </div>
+              <div class="title--small">Reaching Out</div>
+              <div class="subtitle--small">Clay Hand Sculpture</div>
+            </div></div>
           </div>
-          <div class="isotope-item mixed">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-01.jpg" alt=" ">
-            </div>
-            <div class="title--small">Reaching Out</div>
-            <div class="subtitle--small">Clay Hand Sculpture</div>
-          </div>
-            </div>
-          <div class="isotope-item mixed">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-02.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item mixed">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-03.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item mixed">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-04.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item mixed">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-05.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item mixed">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-06.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/contra-posto.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/elephant-comfort-1of3.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-01.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-011.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-012.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-013.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-02.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-03.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-04.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-05.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-06.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-08.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-09.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item three">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/eye-in-fear.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/eye-on-me.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item print layout">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-blue-01.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item print layout">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-blue-02.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item print layout">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-bw-01.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item print layout">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-bw-02.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item print layout">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-green.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item print layout">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-multi.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item print layout">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-pink-01.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item print layout">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-pink-02.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item three">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/hope-leaves.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item type layout print illustration">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/judge-not-blue.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item type layout print illustration">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/judge-not-purple.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item type layout print illustration">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/judge-not-red.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/king-of-nothing.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item three">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/life-poster.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/meeting.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item three print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/mood-swing-01.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item three print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/mood-swing-02.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/mother-aphrodite-color.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/mystears.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/oblivion.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/organometric-01.png" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern01.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern08.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern09.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern10.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern11.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern12.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern13.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern14.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern15.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern16.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern17.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern18.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern19.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/playful-moments.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item layout print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/rape-poster.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/raven-head.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/sad-face.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/shade-comfort-3of3.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/shadowed.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item layout print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/shapology.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item three">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/string-art.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/suspect.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/tea-n-berry.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-01.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-02.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-03.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-04.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-05.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-06.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-07.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-08.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item illustration print">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-09.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/time-1of3.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/time-2of3.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/time-3of3.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/too-late.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/waiting.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-          <div class="isotope-item drawing">
-            <div class="card">
-              <div class="card-image">
-              <img src="https://ahmadmorsy.com/images/portfolio/200px/wisdom-comfort-2of3.jpg" alt=" ">  </div>
-                <div class="title--small">Reaching Out</div>
-                <div class="subtitle--small">Clay Hand Sculpture</div>
-              </div></div>
-            </div>
+
+</div>
+
+
+
+
+
   </div>
   <footer>
     <div class="footer-text">&copy;Copyright.2018 Ahmad Morsy. All Rights Reserved</div>
   </footer>
 </div>
-<!-- <div id="wait-wrapper">
-  <div id="wait"></div>
-  <div class="wait-section">
 
-    <p class="load-message">please wait...</p>
-  </div>
-</div> -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
 
   <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
   <script  src="js/main.js"></script>
-  <script src="https://npmcdn.com/isotope-layout@3/dist/isotope.pkgd.js"></script>
-  <script>
-      function initIsotope() {
-
-          var $container = $('.isotope');
-          var $buttons = $('.buttons');
-
-          $container.isotope({
-              itemSelector: '.isotope-item'
-          });
-
-          $buttons.on('click', 'button', function () {
-              var $filterValue = $(this).attr('data-filter');
-              $('button').removeClass('active');
-              $(this).addClass('active');
-
-              $container.isotope({
-                  filter: $filterValue,
-              });
-          });
-
-      }
-
-      $(document).on('ready', function () {
-          initIsotope();
-      });
-  </script>
-
 
 
 

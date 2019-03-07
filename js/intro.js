@@ -97,21 +97,21 @@ var TextScramble = (function() {
   return TextScramble;
 })();
 
-var phrases = [" ","My Name is", "Ahmad Morsy.", " ", "I'm a graphic designer", "and a mixed media artist.", " ","I have a passion for patterns,","geometry, and motion...", " ","Did I mention coding?", " ", "welcome to my world :)"];
+var introPhrases = [" ","My Name is", "Ahmad Morsy.", " ", "I'm a graphic designer", "and a mixed media artist.", " ","I have a passion for patterns,","geometry, and motion...", " ","Did I mention coding?", " ", "welcome to my world :)"];
 
-var el = document.querySelector(".fx--scrumbled .text");
-var fx = new TextScramble(el);
+var introText = document.querySelector(".fx--scrumbled .text");
+var introFx = new TextScramble(introText);
 
 var counter = 0;
 var next = setTimeout(function next() {
-  fx.setText(phrases[counter]).then(function() {
+  introFx.setText(introPhrases[counter]).then(function() {
     setTimeout(next, 1200);
   });
   counter++;
-  if (counter > phrases.length) {
-  phrases = ["welcome to my world :)"];
-  counter = phrases.length;
-  el.classList.remove();
+  if (counter > introPhrases.length) {
+  introPhrases = ["welcome to my world :)"];
+  counter = introPhrases.length;
+  introText.classList.remove();
   return;
 }
 
