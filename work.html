@@ -14,41 +14,6 @@
 <link href="https://fonts.googleapis.com/css?family=Comfortaa:400,700" rel="stylesheet">
 <link href="css/main.css" rel="stylesheet" type="text/css">
 <link href="css/work.css" rel="stylesheet" type="text/css">
-
-<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script type="text/javascript" src="js/jquery.mixitup.min.js"></script>
-
-<script type="text/javascript">
-$(function () {
-
-  var filterList = {
-
-    init: function () {
-
-      // MixItUp plugin
-      // http://mixitup.io
-      $('#portfoliolist').mixItUp({
-        selectors: {
-          target: '.portfolio',
-          filter: '.filter'
-        },
-        load: {
-          filter: '.print'
-        }
-      });
-
-    }
-
-  };
-
-  // Run the show!
-  filterList.init();
-
-
-});
-</script>
-
-
 </head>
 
 <body id="work">
@@ -84,7 +49,7 @@ $(function () {
       </div>
       <div class="header">
         <div class="header-img">
-          <img src="img/portfolio/lg/pattern-06-lg.png" alt="" width="100%" height="auto">
+          <img src="img/portfolio/lg/organometry-08-lg.jpg" alt="" width="100%" height="auto">
 
       </div>
 
@@ -113,17 +78,13 @@ $(function () {
     </div>
     </header>
 
-
   <div class="main">
     <div class="block">
       <p>Below is a collection of selected work I have done, and projects I have completed within the last five years. The collection contains a portfolio of school projects, commercial work and personal artwork.</p>
       <p>I tried to sort and group the projects based on their categories, but in art every aspect seems to blend in with the rest to create a new piece or form.</p>
     </div>
-    <div class="block block--full">
+    <div id="filters" class="block block--full clearfix">
 
-
-
-      <div id="filters"  class="clearfix">
           <button class="filter active" data-filter="*">All</button>
           <button class="filter" data-filter=".identity">Identity</button>
           <button class="filter" data-filter=".logo">Logo</button>
@@ -136,604 +97,1093 @@ $(function () {
           <button class="filter" data-filter=".mixed">Mixed</button>
           <button class="filter" data-filter=".public">Public</button>
           <button class="filter" data-filter=".three">3-D</button>
-      </div>
 
     </div>
 
 <div class="block block--full">
-      <div id="portfoliolist">
+      <div id="projectList">
 
+        <div class="project print illustration" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/organometry-01-md.jpg"
+              srcset= "img/portfolio/lg/organometry-01-lg.jpg 1280px, img/portfolio/sm/organometry-01-sm.jpg 480px, img/portfolio/xs/organometry-01-xs.jpg 320px" alt=
+            " " /></div>
 
-        <div class="portfolio three" data-cat="three">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/clay-hand-yellow.jpg" alt=" ">
-          </div>
-          <div class="card-info">
-            <p class="card-title">Reaching Out</p>
-            <p class="card-details">Clay Hand Sculpture</p>
+            <div class="project-info">
+              <p class="project-title">Organometry-01</p>
+
+              <p class="project-description">Pattern Study</p>
             </div>
           </div>
         </div>
-        <div class="portfolio  mixed" data-cat="mixed">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-01.jpg" alt=" ">
+
+        <div class="project print illustration" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/organometry-02-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Organometry-02</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
           </div>
-          <div class="title--small">Reaching Out</div>
-          <div class="subtitle--small">Clay Hand Sculpture</div>
         </div>
+
+        <div class="project print illustration" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/organometry-03-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Organometry-03</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
           </div>
-        <div class="portfolio  mixed" data-cat="mixed">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-02.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio  mixed" data-cat="mixed">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-03.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio  mixed" data-cat="mixed">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-04.jpg" alt="">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio  mixed" data-cat="mixed">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-05.jpg" alt=" "></div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio  mixed" data-cat="mixed">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/collage-color-06.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/contra-posto.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/elephant-comfort-1of3.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-01.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-011.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-012.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-013.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-02.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-03.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-04.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-05.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-06.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-08.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/exp-09.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio three" data-cat="three">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/eye-in-fear.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/eye-on-me.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio print layout">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-blue-01.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio print layout">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-blue-02.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio print layout">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-bw-01.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio print layout">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-bw-02.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio print layout">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-green.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio print layout">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-multi.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio print layout">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-pink-01.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio print layout">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/fprint-pink-02.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio three" data-cat="three">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/hope-leaves.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio type layout print illustration">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/judge-not-blue.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio type layout print illustration">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/judge-not-purple.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio type layout print illustration">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/judge-not-red.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/king-of-nothing.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio three" data-cat="three">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/life-poster.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/meeting.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio three print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/mood-swing-01.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio three print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/mood-swing-02.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/mother-aphrodite-color.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/mystears.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/oblivion.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/organometric-01.png" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern01.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern08.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern09.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern10.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern11.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern12.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern13.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern14.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern15.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern16.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern17.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern18.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/pattern19.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/playful-moments.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio layout print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/rape-poster.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/raven-head.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/sad-face.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/shade-comfort-3of3.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/shadowed.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio layout print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/shapology.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio three" data-cat="three">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/string-art.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/suspect.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/tea-n-berry.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-01.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-02.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-03.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-04.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-05.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-06.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-07.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-08.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio illustration print" data-cat="print">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/tile-09.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/time-1of3.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/time-2of3.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/time-3of3.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/too-late.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/waiting.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
-        <div class="portfolio drawing" data-cat="drawing">
-          <div class="card">
-            <div class="card-image">
-            <img src="https://ahmadmorsy.com/images/portfolio/200px/wisdom-comfort-2of3.jpg" alt=" ">  </div>
-              <div class="title--small">Reaching Out</div>
-              <div class="subtitle--small">Clay Hand Sculpture</div>
-            </div></div>
+        </div>
+
+        <div class="project print illustration" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/organometry-04-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Organometry-04</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
           </div>
+        </div>
+
+        <div class="project print illustration" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/organometry-05-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Organometry-05</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print illustration" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/organometry-06-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Organometry-06</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print illustration" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/organometry-07-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Organometry-07</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print illustration" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/organometry-08-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Organometry-08</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/collage-color-01-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/collage-color-02-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/collage-color-03-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/collage-color-04-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/collage-color-05-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/collage-color-06-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/fingerprints-01-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/fingerprints-02-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/fingerprints-03-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/fingerprints-04-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/fingerprints-05-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/fingerprints-06-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/pattern-01-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Pattern-01</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/pattern-02-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Pattern-02</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/pattern-03-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Pattern-03</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/pattern-04-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Pattern-04</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/pattern-05-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Pattern-05</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/pattern-06-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Pattern-06</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/pattern-07-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Pattern-07</p>
+
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/pattern-08-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Pattern-08</p>
+              <p class="project-description">Pattern Study</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/contra-posto-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">contraposto</p>
+
+              <p class="project-description">Charcoal Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/shadowed-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Shadowed</p>
+
+              <p class="project-description">Charcoal Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/too-late-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Too Late</p>
+
+              <p class="project-description">Charcoal Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/shade-comfort-1-3-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Shade (Comfort 1/3)</p>
+
+              <p class="project-description">3-Series Drawings</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/elefant-comfort-2-3-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Elefant (Comfort 2/3)</p>
+
+              <p class="project-description">3-Series Drawings</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/wisdom-comfort-3-3-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Wisdom (Comfort 3/3)</p>
+
+              <p class="project-description">3-Series Drawings</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/unplanned-dinner-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Unplanned Dinner</p>
+
+              <p class="project-description">Charcoal Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/favorite-things-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Favorite Things</p>
+
+              <p class="project-description">Charcoal Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/elephant-redraw-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Elephant(not original work)</p>
+
+              <p class="project-description">Charcoal Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project draming" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/king-of-nothing-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">King of Nothing</p>
+              <p class="project-description">Soft Pastel Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/mother-aphrodite-grayscale-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Mother Aphrodite</p>
+
+              <p class="project-description">Charcoal Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/playful-moments-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Playful Moments</p>
+
+              <p class="project-description">Pastel Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/raven-head-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Raven-head</p>
+
+              <p class="project-description">Pastel Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/tea-n-berry-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Tea-n-Berry</p>
+
+              <p class="project-description">Pastel Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/suspect-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Suspect</p>
+
+              <p class="project-description">Pastel Drawing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project Three" data-cat="Three">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/clay-hand-01-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project three" data-cat="three">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/clay-hand-02-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/hope-leaves-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Hope Leaves</p>
+
+              <p class="project-description">Acrylic on Foamcore</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed three" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/life-poster-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Life</p>
+
+              <p class="project-description">Poster of 3D Assemblage</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/sun-string-art-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Sun</p>
+
+              <p class="project-description">String Art</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed three" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/mood-swing-3D-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Mood Swing</p>
+
+              <p class="project-description">Poster of 3D Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project three" data-cat="three">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/twist-of-events-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Twist of Events</p>
+
+              <p class="project-description">Bulsa wood Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed three" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/cubography-stop-mo-clip-md.jpg"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Cubography</p>
+
+              <p class="project-description">Stop Motion Clip</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed print" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/mistears-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Mistears</p>
+
+              <p class="project-description">Photo Editing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed print" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/mood-swing-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Mood Swing</p>
+
+              <p class="project-description">Photo Editing</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/four-elements-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Four Elements</p>
+
+              <p class="project-description">Colored Paper Collage</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed type" data-cat="type">
+          <div class="project-card">
+            <div class="project-img--main">
+              <img src="img/portfolio/md/steven-calligraphy-md.jpg" alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Steven Arabic Calligraphy</p>
+
+              <p class="project-description">Typography</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project typegraphy" data-cat="typegraphy">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/judge-not-blue-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Judge Not - Blue</p>
+              <p class="project-description">Hand Lettering Poster</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project typegraphy" data-cat="typegraphy">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/judge-not-purple-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Judge Not - Purple</p>
+              <p class="project-description">Hand Lettering Poster</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project typegraphy" data-cat="typegraphy">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/judge-not-red-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Judge Not - Red</p>
+              <p class="project-description">Hand Lettering Poster</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project type" data-cat="type">
+          <div class="project-card">
+            <div class="project-img--main"><img src=
+            "img/portfolio/md/piotr-bauer-calligraphy-md.jpg" alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Peter (Piotr) Arabic Calligraphy</p>
+
+              <p class="project-description">Typography</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project type" data-cat="type">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/oscar-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Oscar Arabic Calligraphy</p>
+
+              <p class="project-description">Typography</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/geometrik-01-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Geometrik 1</p>
+
+              <p class="project-description">Geometric Composition</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/geometrik-02-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Geometrik 2</p>
+
+              <p class="project-description">Geometric Composition</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/geometrik-03-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Geometrik 3</p>
+
+              <p class="project-description">Geometric Composition</p>
+            </div>
+          </div>
+        </div>
+        <div class="project print" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/geometrik-04-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Geometrik 4</p>
+
+              <p class="project-description">Geometric Composition</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/time-1-3-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Time (1/3)</p>
+
+              <p class="project-description">3-series Drawings</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/time-2-3-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Time (2/3)</p>
+
+              <p class="project-description">3-series Drawings</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project drawing" data-cat="drawing">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/time-3-3-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Time (3/3)</p>
+
+              <p class="project-description">3-series Drawings</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print layout" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/rape-poster-2-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Rape</p>
+
+              <p class="project-description">Poster Layout Design</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print layout" data-cat="print">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/twisted-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Twisted</p>
+
+              <p class="project-description">Poster Design</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project print layout type illustration" data-cat="layout">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/ado-poster-01-md.png"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Much ado about nothing 1</p>
+
+              <p class="project-description">Play Poster</p>
+            </div>
+          </div>
+        </div>
+        <div class="project print layout type illustration" data-cat="layout">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/ado-poster-02-md.png"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Much ado about nothing 2</p>
+
+              <p class="project-description">Play Poster</p>
+            </div>
+          </div>
+        </div>
+        <div class="project print layout type illustration" data-cat="layout">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/ado-poster-03-md.png"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Much ado about nothing 3</p>
+
+              <p class="project-description">Play Poster</p>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="project print layout type illustration" data-cat="layout">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/ado-poster-04-md.png"
+            alt=" " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Much ado about nothing 4</p>
+
+              <p class="project-description">Play Poster</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/event-poster-01-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/event-poster-02-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/event-poster-03-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/event-poster-04-md.jpg" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="project mixed" data-cat="mixed">
+          <div class="project-card">
+            <div class="project-img--main"><img src="img/portfolio/md/tahiyya-kolthoum-md.png" alt=
+            " " /></div>
+
+            <div class="project-info">
+              <p class="project-title">Reaching Out</p>
+
+              <p class="project-description">Clay Hand Sculpture</p>
+            </div>
+          </div>
+        </div>
+
+
+
 
 </div>
+</div>
+</div>
+<div id="overlay">
+      <div class="pop-up flex-col block">
+      <div class="flex-row">
 
+          <h3 class="project-title">Project Title</h3>
+      </div>
 
+      <div class="flex-row">
 
+        <p class="project-description">Project Description</p>
+      </div>
 
+      <div class="flex-row">
+
+          <p class="project-details">Some Details about project Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, urna vitae vehicula dignissim, tellus justo placerat justo, ac fermentum quam ante et erat. Maecenas in dignissim urna. Quisque vesquam! lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vel sint ullam eos id nulla error accusantium tenetur. Minus iure sit tempore totam. Corporis, cum natus. Excepturi nesciunt deserunt saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deleniti consequuntur quas! Ipsa, illum. A eligendi est, sequi commodi delectus temporibus, reprehenderit voluptas labore aspernatur ipsa iste cupiditate, aliquid magni? Lorem </p>
+      </div>
+
+      <div class="flex-row">
+            <div class="project-img--main"></div>
+      </div>
+          <div class="flex-row">
+            <div class="project-img--sec1"></div>
+            <div class="project-img--sec2"></div>
+          </div>
+
+            <div class="flex-row">
+              <div class="project-img--sec3"></div>
+            </div>
+  </div>
+  <button class="btn-close">&times;</button>
 
   </div>
+
   <footer>
     <div class="footer-text">&copy;Copyright.2018 Ahmad Morsy. All Rights Reserved</div>
   </footer>
+
+
 </div>
 
 
-  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script> -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script  src="js/main.js"></script>
+  <!-- <script type="text/javascript" src="http://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script> -->
+
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+
+  <script type="text/javascript">
+
+        $('#projectList').mixItUp({
+          load: {
+          	sort: 'order:asc'
+          },
+        	animation: {
+            effects: "fade scale",
+            duration: 600,
+            easing:"ease",
+            perspectiveDistance:"3000",
+            perspectiveOrigin:"50% 50%"
+          },
+          selectors: {
+            target: '.project',
+            filter: '.filter',
+            sort: '.sort-btn'
+          },
+          callbacks: {
+            onMixEnd: function(state){
+              console.log(state)
+            }
+          }
+        });
+  </script>
 
 
 

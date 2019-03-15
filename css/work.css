@@ -221,6 +221,12 @@ height:1280px;
 
  }
 
+.filter:hover:before {
+  background-color: var(--blue-darkest);
+
+
+}
+
 .filter.active {
  background-color: var(--blue-darkest);
  color:#fff;
@@ -228,18 +234,18 @@ height:1280px;
 
 .filter.active:before {
  background-color: var(--dgray3);
- border:1px solid #111;
+ /* border:1px solid #111; */
 }
 
- #portfoliolist {
+ #projectList {
    display: block;
-   padding-top: 1vw;
+   /* padding-top: 1vw; */
    width: 100%;
    min-height:100vh;
    /* justify-content: space-between; */
  }
 
- .portfolio {
+ .project {
    text-align: center;
    background-color: var(--dgray6);
    box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.4);
@@ -251,17 +257,10 @@ height:1280px;
    font-size: 16px;
  }
 
- .portfolio  * {
-   -webkit-box-sizing: border-box;
-   box-sizing: border-box;
-   -webkit-transition: all 0.3s ease-out;
-   transition: all 0.3s ease-out;
- }
-
- body.light .portfolio {
+ body.light .project {
    background-color: var(--lgray9);
  }
- .portfolio .card {
+ .project .project-card {
    /* background-position: center center;
    background-repeat: no-repeat;
    background-size: cover; */
@@ -269,7 +268,7 @@ height:1280px;
    position: relative;
  }
 
- .portfolio .card-image {
+ .project .project-img--main {
    overflow:hidden;
    background: #000;
    width: 100%;
@@ -278,25 +277,25 @@ height:1280px;
 
  }
 
- .portfolio img {
+ .project img {
    position: relative;
    width: 100%;
+   min-height:100%;
    vertical-align: middle;
-   object-fit:cover;
+   /* object-fit:cover; */
    -webkit-transform: scale(1.2);
    transform: scale(1.2);
    margin:0 auto;
-   --webkit-filter: grayscale(0);
-   filter:grayscale(0);
    opacity:1;
 
  }
 
- .portfolio .card-info  {
+ .project .project-info  {
   position: absolute;
   transform-origin: bottom center;
   bottom: 0;
   left: 0;
+  right:0;
   width: 100%;
   height: 40%;
   z-index: 1;
@@ -304,26 +303,26 @@ height:1280px;
   padding: 6px 20px;
 }
 
-.portfolio .card-title,
-.portfolio .card-details {
+.project .project-title,
+.project .project-description {
    line-height: 1.2em;
    margin-bottom:8px;
 
 }
 
-.portfolio .card-title {
-  font-weight: 700;
+.project .project-title {
+  font-weight: 500;
   font-size:1rem;
   text-transform: uppercase;
   color:rgba(255,255,255,1);
 
 }
-.portfolio .card-details {
+.project .project-description {
   font-size: 0.9em;
   font-weight: 500;
   color:rgba(255,255,255,0.6);
 }
-.portfolio a {
+.project a {
   position: absolute;
   top: 0;
   bottom: 0;
@@ -331,28 +330,16 @@ height:1280px;
   left: 0;
   z-index: 1;
 }
-.portfolio:hover .portfolio {
-background:#fff;
 
-
+.project:hover img {
+  opacity: 0.5;
 }
 
-.portfolio:hover img,
-.portfolio.hover img {
-  opacity: 0.3;
-  --webkit-filter: grayscale(1);
-  filter:grayscale(1);
-}
-.portfolio:hover .card-info {
+.project:hover .project-info {
   opacity: 1;
   bottom: 10px;
 
 }
-
-
-
-
-
 
 
   /*----------[ Media Queries ]-------------*/
@@ -360,7 +347,7 @@ background:#fff;
   /*---------[ desktop ]----------*/
 
   @media screen and (min-width: 961px) {
-    .portfolio {
+    .project {
       width: 24%;
       margin: 0.5%;
     }
@@ -369,7 +356,7 @@ background:#fff;
   /*---------[ laptop ]----------*/
 
   @media screen and (min-width: 641px) and (max-width: 960px) {
-    .portfolio {
+    .project {
       width: 48%;
       margin: 1%;
     }
@@ -378,7 +365,7 @@ background:#fff;
   /*---------[ mobile ]----------*/
 
   @media screen and (min-width: 481px) and (max-width: 640px) {
-    .portfolio {
+    .project {
       width: 96%;
       margin: 2%;
     }
@@ -387,14 +374,154 @@ background:#fff;
   /*---------[ small - old screens ]----------*/
 
   @media screen and (max-width: 480px) {
-    .portfolio {
+    .project {
       width: 96%;
       margin: 2%;
     }
   }
 
+  #overlay {
+    width: 100%;
+    height:100%;
+    top:0;
+    left:0;
+    right:0;
+    bottom:0;
+    background: rgba(20, 20, 20, 0.8);
+    position: fixed;
+    overflow-y: scroll;
+    display: none;
+    opacity: 1;
+    padding-top:100px;
+    padding-bottom:100px;
+    z-index: 400;
+  }
 
-/* #Clearing */
+
+  .pop-up {
+    display: none;
+    padding: 60px 40px;
+     -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    transform: translateX(-50%);
+    opacity: 0;
+    width:80%;
+    -webkit-box-shadow: 0px 0px 3px 3px rgba(20, 20, 20, 0.25);
+    -moz-box-shadow: 0px 0px 3px 3px rgba(20, 20, 20, 0.25);
+    box-shadow: 0px 0px 3px 3px rgba(20, 20, 20, 0.25);
+    z-index: 500;
+    position: absolute;
+    left: 50%;
+    top: 0%;
+    margin-top:50px;
+    margin-bottom:50px;
+    /* margin-right:auto;
+    margin-left:auto; */
+  }
+
+  .is-visible {
+    opacity: 1;
+    display: block !important;
+  }
+
+
+  .pop-up .project-title {
+    text-transform: uppercase;
+    display: block;
+  }
+
+  .pop-up .project-description {
+    text-align: justify;
+  }
+
+  .pop-up .project-img--main {
+    width: 100%;
+    overflow: hidden;
+    text-align: center;
+    padding:0;
+  }
+
+  .pop-up img {
+    width: 110%;
+    left:50%;
+    margin-left:-5%;
+    margin-right:-5%;
+  }
+
+  .pop-up ~ .btn-close {
+    border: none;
+    -webkit-position:fixed;
+    position:-webkit-fixed;
+    position:fixed;
+    width:100vw;
+    height:50px;
+    margin:0;
+    top:0;
+    left:0;
+    right:0;
+    color:#fff;
+    opacity:0;
+    background:var(--dgray1);
+    font-size:24px;
+    z-index:1000;
+    font-weight: bold;
+    transition:all 0.3s ease;
+  }
+
+  .pop-up.is-visible ~ .btn-close {
+    opacity:1;
+    transition:all 0.3s ease;
+  }
+
+  .pop-up.is-visible ~ .btn-close:hover {
+color:var(--blue);
+
+  }
+
+  .pop-up.is-visible img {
+opacity:0.9;
+
+}
+
+
+  /*----------[ Media Queries ]-------------*/
+
+  /*---------[ desktop ]----------*/
+
+  @media screen and (min-width: 961px) {
+    .pop-up {
+      padding: 60px 40px;
+      width:80%;
+    }
+  }
+
+  /*---------[ laptop ]----------*/
+
+  @media screen and (min-width: 641px) and (max-width: 960px) {
+    .pop-up {
+      padding: 40px 20px;
+      width:90%;
+    }
+    }
+
+  /*---------[ mobile ]----------*/
+
+  @media screen and (min-width: 481px) and (max-width: 640px) {
+    .pop-up {
+      padding: 40px 20px;
+      width:90%;
+    }
+    }
+
+  /*---------[ small - old screens ]----------*/
+
+  @media screen and (max-width: 480px) {
+    .pop-up {
+      padding: 40px 20px;
+      width:90%;
+    }
+    }
+
 
 /* Self Clearing Goodness */
 .container:after { content: "\0020"; display: block; height: 0; clear: both; visibility: hidden; }
