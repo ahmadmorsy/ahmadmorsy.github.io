@@ -123,35 +123,28 @@ html {
   -webkit-user-select: none;
 }
 
-body,
-body.loading {
+body {
   width: 100%;
-  overflow: hidden;
   background-color: var(--dgray2);
-  transition: all 0.3s cubic-bezier(0.54, 1, 0.5, 1);
+  transition: all 0.3s ease;
+  opacity:1;
 }
 
-body.loading .page{
-  opacity: 0;
-  transition: all 0.3s cubic-bezier(0.54, 1, 0.5, 1);
-
-
-
-}
-
-body.light, body.loading.light {
-  width: 100%;
+body.loading {
   overflow: hidden;
-  background-color: var(--lgray2);
   opacity: 0;
-  transition: all 0.3s cubic-bezier(0.54, 1, 0.5, 1);
+  transition: opacity 0.3s ease;
 }
 
 body.loaded {
-  transition: all 0.3s ease;
+  overflow: auto;
+  opacity:1;
+  transition: opacity 0.3s ease;
 }
 
-body.loaded .main {
+
+/*
+body.loaded .page {
   transition: all 0.3s ease;
   display:flex;
   justify-content:center;
@@ -161,7 +154,7 @@ body.loaded .main {
   flex-direction: row;
   opacity:1;
 
-}
+} */
 
 .ovfl-hide {
   overflow: hidden;

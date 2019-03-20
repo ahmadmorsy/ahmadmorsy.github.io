@@ -268,7 +268,7 @@ height:1280px;
    position: relative;
  }
 
- .project .project-img--main {
+ .project .img-main-md-box {
    overflow:hidden;
    background: #000;
    width: 100%;
@@ -340,6 +340,14 @@ height:1280px;
   bottom: 10px;
 
 }
+.img-sec1-md,
+.img-sec2-md,
+.img-sec3-md {
+display:none;
+
+}
+
+
 
 
   /*----------[ Media Queries ]-------------*/
@@ -434,7 +442,10 @@ height:1280px;
     text-align: justify;
   }
 
-  .pop-up .project-img--main {
+.img-main-lg-box,
+.img-sec1-lg-box,
+.img-sec2-lg-box,
+.img-sec3-lg-box {
     width: 100%;
     overflow: hidden;
     text-align: center;
@@ -442,10 +453,10 @@ height:1280px;
   }
 
   .pop-up img {
-    width: 110%;
+    width: 120%;
     left:50%;
-    margin-left:-5%;
-    margin-right:-5%;
+    margin-left:-10%;
+    margin-right:-10%;
   }
 
   .pop-up ~ .btn-close {
@@ -460,6 +471,7 @@ height:1280px;
     left:0;
     right:0;
     color:#fff;
+    display:block;
     opacity:0;
     background:var(--dgray1);
     font-size:24px;
@@ -479,7 +491,8 @@ color:var(--blue);
   }
 
   .pop-up.is-visible img {
-opacity:0.9;
+opacity:1;
+filter:brightness(0.8);
 
 }
 
@@ -509,7 +522,7 @@ opacity:0.9;
   @media screen and (min-width: 481px) and (max-width: 640px) {
     .pop-up {
       padding: 40px 20px;
-      width:90%;
+      width:96%;
     }
     }
 
@@ -518,7 +531,7 @@ opacity:0.9;
   @media screen and (max-width: 480px) {
     .pop-up {
       padding: 40px 20px;
-      width:90%;
+      width:100%;
     }
     }
 
