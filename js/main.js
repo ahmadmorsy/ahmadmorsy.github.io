@@ -15,59 +15,125 @@ $(document).ready(function() {
 
 /*-------------nav menu---------------*/
 
+// $(document).ready(function() {
+// 	var last, diff;
+//
+// 	$(".nav-icon").click(function(event) {
+// 		diff = event.timeStamp - last;
+//
+// 		if (diff >= 1000) {
+//       $(".nav-icon").show("slow");
+// 			$(".nav-icon").prop("pointer-events", "normal");
+// 			$(this).toggleClass("change");
+// 			$(".nav-page").toggleClass("is-visible");
+// 			$("html").toggleClass("ovfl-hide");
+// 		} else {
+// 			$(".nav-icon").prop("pointer-events", "none");
+//       $(".nav-icon").hide("slow");
+//
+// 		}
+// 		last = event.timeStamp;
+// 	});
+// });
+
+/*-------------nav menu---------------*/
+
 $(document).ready(function() {
-	var last, diff;
+		$(".nav-icon").click(function(event) {
+			event.preventDefault();
+      if ($(".nav-page").hasClass("is-visible")) {
+        $(".nav-page").fadeOut("slow");
+$(".nav-page").removeClass("is-visible");
+$(".page").fadeIn("slow");
 
-	$(".nav-icon").click(function(event) {
-		diff = event.timeStamp - last;
+} else {
+  $(".page").fadeOut("slow");
+  $(".nav-page").fadeIn("slow");
+  $(".nav-page").addClass("is-visible");
+}
+			return false;
+		});
 
-		if (diff >= 1200) {
-			$(".nav-icon").prop("pointer-events", "normal");
-			$(this).toggleClass("change");
-			$(".nav-page").toggleClass("is-visible");
-			$("html").toggleClass("ovfl-hide");
-		} else {
-			$(".nav-icon").prop("pointer-events", "none");
-		}
-		last = event.timeStamp;
 	});
-});
+
+  /*------------- page transition ---------------*/
+
+
+  $(document).ready(function() {
+      $("body,.page, header").fadeIn("slow");
+      //
+      // function fadeInPage() {
+      // $(".page").fadeIn("slow", fadeInHeader);
+      // }
+      // function fadeInHeader() {
+      // $("header").fadeIn("slow");
+      // }
+
+      $("a").click(function(event){
+          event.preventDefault();
+          linkLocation = this.href;
+          $(".page, header").fadeOut(1000, redirectPage);
+
+      });
+
+      function redirectPage() {
+          window.location = linkLocation;
+      }
+  });
+/*------------- page transition ---------------*/
 
 {
+  //
+	// setTimeout(() => document.body.classList.add("loaded"), 300);
 
-	setTimeout(() => document.body.classList.add("loaded"), 300);
-
-	const navlinks = document.querySelectorAll(".nav-link");
-	Array.from(navlinks).forEach(link =>
-		link.addEventListener("click", ev => {
-			ev.preventDefault();
-			console.log(ev.target.href);
-			document.body.classList.remove("loaded");
-			document.body.classList.add("loading");
-      document.body.classList.add(ev.target.href);
-
-			document.body.addEventListener(
-				"transitionend",
-				() => (window.location = ev.target.href)
-			);
-		})
-	);
+	// const navlinks = document.querySelectorAll(".nav-link");
+	// Array.from(navlinks).forEach(link =>
+	// 	link.addEventListener("click", ev => {
+	// 		ev.preventDefault();
+	// 		console.log(ev.target.href);
+	// 		document.body.classList.remove("loaded");
+	// 		document.body.classList.add("loading");
+  //     document.body.classList.add(ev.target.href);
+  //
+	// 		document.body.addEventListener(
+	// 			"transitionend",
+	// 			() => (window.location = ev.target.href)
+	// 		);
+	// 	})
+	// );
 }
 
-/*------ back to top button function -----------*/
+/*------------- click circles ---------------*/
 //
-// $(document).ready(function() {
-// 	$("#back2Top").click(function(event) {
-// 		event.preventDefault();
-// 		$("html, body").animate(
-// 			{
-// 				scrollTop: 0
-// 			},
-// 			"slow"
-// 		);
-// 	});
-// 	return false;
-// });
+// {
+//
+// window.addEventListener("click", createCircle);
+//
+//
+// function createCircle(event) {
+//
+//
+//     let clickCircle = document.createElement("div");
+//       clickCircle.className = "click-circle";
+//
+//     clickCircle.style.left = (event.pageX - 20) + "px";
+//     clickCircle.style.top = (event.pageY - 20) + "px";
+//     document.body.appendChild(clickCircle);
+//   }
+// }
+
+/*------ back to top button function -----------*/
+
+$(document).ready(function() {
+		$("#back2Top").click(function(event) {
+			event.preventDefault();
+			$("html, body").animate({ scrollTop: 0 }, "slow");
+			return false;
+		});
+	});
+
+/*------ portfolio page -----------*/
+
 
 $(document).ready(function() {
   $('.project').on('click', function() {
@@ -86,11 +152,13 @@ $(document).ready(function() {
 // var imgSec3Lg = $(this).find('.img-sec3-md').attr('src').replace('md' ,'lg').replace('-md','-lg')
 // $('.img-sec3-lg').attr('src',imgSec3Lg);
 
-    $(".main, .header").css("display", "none");
+    $(".main, .header").fadeOut("fast");
     $('#overlay').addClass('is-visible');
     $('body, html').addClass('ovfl-hide');
-    $('.pop-up').fadeIn('fast', function() {
+    $('.pop-up').fadeIn('slow', function() {
     $('.pop-up').addClass('is-visible');
+    $('#overlay').animate({ scrollTop: 0 }, "fast");
+
 
     // var sec1MdSrc = $(this).find('.img-sec1-md').attr('src');
     // var	sec1LgSrc = sec1MdSrc.replace('md' ,'lg').replace('-md','-lg');
@@ -112,11 +180,46 @@ $(document).ready(function() {
 
   $('.btn-close,#overlay').on('click', function() {
     $(".main, .header").css("display", "block");
-      $('#overlay').removeClass('is-visible');
 
     $(".pop-up").fadeOut("fast", function() {
       $('.pop-up').removeClass('is-visible');
+      $('#overlay').removeClass('is-visible');
+
     });
   });
 });
 });
+//
+// $("body").mousemove(function(event) {
+//   var headerImg = $(".header-img");
+//   var x = headerImg.width() / 2;
+//   var y = headerImg.height() / 2;
+//   var dx = (event.pageX - x) / 100;
+//   var dy = (event.pageY - y) / 100;
+//
+//   headerImg.css('background-position', dx + 'px ' + dy + 'px');
+//
+// });
+
+//
+// $(document).ready(function(){
+//   var mouseX, mouseY;
+//   var ww = $( window ).width();
+//   var wh = $( window ).height();
+//   var traX, traY, angleR;
+//   $(document).mousemove(function(e){
+//     mouseX = e.pageX;
+//     mouseY = e.pageY;
+//     traX = ((4 * mouseX) / 1280) + 50;
+//     traY = ((4 * mouseY) / 1280) + 50;
+//     angleR = mouseX / 3600;
+//
+//     console.log(traX);
+    // $(".letter").css({"animation-duration" : (1 * angleR) + "s"});
+    //   $(".letters").css({"animation-duration" : (1 * angleR) + "s"});
+    // "left": traX + "%",
+    //  "top":  traY + "%"});
+//      $(".header").css({
+//      "background-position": traX + "%" + " " + traY + "%"});
+//   });
+// });

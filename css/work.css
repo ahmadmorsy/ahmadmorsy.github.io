@@ -247,8 +247,9 @@ height:1280px;
 
  .project {
    text-align: center;
-   background-color: var(--dgray6);
-   box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.4);
+   background-color: var(--dgray3);
+   box-shadow: 2px 4px 8px -4px rgba(0, 0, 0, 0.4),
+   inset 0 0 20px -20px rgba(0, 0, 0, 0.8);
    padding: 0.4rem;
  	display:none;
  	float:left;
