@@ -36,7 +36,7 @@ filter:brightness(0.6);
 top:0;
 right:0;
 left:0;
-display:none;
+display:block;
 box-shadow:none;
 }
 
