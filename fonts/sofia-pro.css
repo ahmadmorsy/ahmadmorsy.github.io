@@ -1,0 +1,44 @@
+ 
+
+@font-face {
+    font-family:"Sofia Pro UltraLight";
+    src:url("Sofia Pro UltraLight.woff2") format("woff2"),url("Sofia Pro UltraLight.woff") format("woff"),url("Sofia Pro UltraLight.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+@font-face {
+    font-family:"Sofia Pro Light";
+    src:url("Sofia Pro Light.woff2") format("woff2"),url("Sofia Pro Light.woff") format("woff"),url("Sofia Pro Light.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+
+
+
+@font-face {
+    font-family:"Sofia Pro Regular";
+    src:url("Sofia Pro Regular.woff2") format("woff2"),url("Sofia Pro Regular.woff") format("woff"),url("Sofia Pro Regular.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+@font-face {
+    font-family:"Sofia Pro Bold";
+    src:url("Sofia Pro Bold.woff2") format("woff2"),url("Sofia Pro Bold.woff") format("woff"),url("Sofia Pro Bold.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+
+
+
+@font-face {
+    font-family:"Sofia Pro Black";
+    src:url("Sofia Pro Black.woff2") format("woff2"),url("Sofia Pro Black.woff") format("woff"),url("Sofia Pro Black.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+        
