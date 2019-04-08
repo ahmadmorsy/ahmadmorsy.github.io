@@ -1,0 +1,41 @@
+
+
+@font-face {
+    font-family:"Sofia Pro UltraLight";
+    src:url("https://ahmadmorsy.github.io/fonts/SofiaProUltraLight.woff2") format("woff2"),url("https://ahmadmorsy.github.io/fonts/SofiaProUltraLight.woff") format("woff"),url("https://ahmadmorsy.github.io/fonts/SofiaProUltraLight.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+@font-face {
+    font-family:"Sofia Pro Light";
+    src:url("https://ahmadmorsy.github.io/fonts/SofiaProLight.woff2") format("woff2"),url("https://ahmadmorsy.github.io/fonts/SofiaProLight.woff") format("woff"),url("https://ahmadmorsy.github.io/fonts/SofiaProLight.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+
+
+
+@font-face {
+    font-family:"Sofia Pro Regular";
+    src:url("https://ahmadmorsy.github.io/fonts/SofiaProRegular.woff2") format("woff2"),url("https://ahmadmorsy.github.io/fonts/SofiaProRegular.woff") format("woff"),url("https://ahmadmorsy.github.io/fonts/SofiaProRegular.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+@font-face {
+    font-family:"Sofia Pro Bold";
+    src:url("https://ahmadmorsy.github.io/fonts/SofiaProBold.woff2") format("woff2"),url("https://ahmadmorsy.github.io/fonts/SofiaProBold.woff") format("woff"),url("https://ahmadmorsy.github.io/fonts/SofiaProBold.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}
+
+
+
+
+
+@font-face {
+    font-family:"Sofia Pro Black";
+    src:url("https://ahmadmorsy.github.io/fonts/SofiaProBlack.woff2") format("woff2"),url("https://ahmadmorsy.github.io/fonts/SofiaProBlack.woff") format("woff"),url("https://ahmadmorsy.github.io/fonts/SofiaProBlack.otf") format("opentype");
+    font-style:normal;font-weight:400;
+}

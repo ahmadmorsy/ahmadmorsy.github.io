@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "Gilroy-Light";
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Light.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Light.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Light.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Light.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Light.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: "Gilroy-Regular";
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Regular.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Regular.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Regular.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Regular.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Regular.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 400;
+}
+
+
+@font-face {
+    font-family: "Gilroy-Medium";
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Medium.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Medium.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Medium.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Medium.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Medium.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 500;
+}
+
+
+@font-face {
+    font-family: "Gilroy-Bold";
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Bold.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Bold.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Bold.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Bold.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Bold.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 600;
+}
+
+
+@font-face {
+    font-family: "Gilroy-ExtraBold";
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-ExtraBold.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-ExtraBold.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-ExtraBold.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-ExtraBold.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-ExtraBold.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 700;
+}
+
+
+@font-face {
+    font-family: "Gilroy-Black";
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Black.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Black.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Black.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Black.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Black.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 800;
+}
+
+
+@font-face {
+    font-family: "Gilroy-Heavy";
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Heavy.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/Gilroy-Heavy.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Heavy.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Heavy.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/Gilroy-Heavy.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 900;
+}
