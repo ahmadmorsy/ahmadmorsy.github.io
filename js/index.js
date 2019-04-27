@@ -35,26 +35,70 @@ $(window).scroll(function() {
   var navbarHeight = $(".nav-bar").height();
   var scrolledHeight = $(window).scrollTop();
 
-  var yScroll = scrolledHeight / (headerHeight +navbarHeight) ;
-  $('.overscroll-fix').css({'opacity': yScroll });
-  $('.header').css({ 'opacity': 1 - yScroll });
+  var yScroll = scrolledHeight / (headerHeight + navbarHeight) ;
+  $('.overscroll-fix').css({'opacity': yScroll});
+  $('.header').css({'opacity': 1 - yScroll});
 
-
-
-  if(headerOp > 1) {
+  if(yScroll > 1) {
    $('.overscroll-fix').css({ 'opacity': 1 });
    $('.header').css({ 'opacity': 0 });
 
- } else if (headerOp < 0) {
+ } else if (yScroll < 0) {
 	 $('.overscroll-fix').css({ 'opacity': 0 });
    $('.header').css({ 'opacity': 1 });
-
   }
 });
 
+$(document).ready(function() {
+    $(window).scroll( function(){
+        $('.fadeOnScroll').each( function(i){
+
+            var bottom_of_element = $(this).offset().top + $(this).outerHeight();
+            var bottom_of_window = $(window).scrollTop() + $(window).height();
+            var navbarHeight = $(".nav-bar").height();
+
+            if( bottom_of_window > (bottom_of_element - 3 * navbarHeight)) {
+                $(this).animate({'opacity':'1'}, 600);
+            }
+
+        });
+    });
+});
 
 
+(function() {
+	var backTop = document.getElementsByClassName('js-back-to-top')[0];
+	if( backTop ) {
+		var scrollDuration = parseInt(backTop.getAttribute('data-duration')) || 300, //scroll to top duration
+			scrollOffset = parseInt(backTop.getAttribute('data-offset')) || 0, //show back-to-top if scrolling > scrollOffset
+			scrolling = false;
 
+		//detect click on back-to-top link
+		backTop.addEventListener('click', function(event) {
+			event.preventDefault();
+			(!window.requestAnimationFrame) ? window.scrollTo(0, 0) : Util.scrollTo(0, scrollDuration);
+			//move the focus to the #top-element - don't break keyboard navigation
+			Util.moveFocus(document.getElementById(backTop.getAttribute('href').replace('#', '')));
+		});
+
+		//listen to the window scroll and update back-to-top visibility
+		checkBackToTop();
+		if (scrollOffset > 0) {
+			window.addEventListener("scroll", function(event) {
+				if( !scrolling ) {
+					scrolling = true;
+					(!window.requestAnimationFrame) ? setTimeout(function(){checkBackToTop();}, 250) : window.requestAnimationFrame(checkBackToTop);
+				}
+			});
+		}
+
+		function checkBackToTop() {
+			var windowTop = window.scrollY || document.documentElement.scrollTop;
+			Util.toggleClass(backTop, 'back-to-top--is-visible', windowTop >= scrollOffset);
+			scrolling = false;
+		}
+	}
+}());
 
 
 var timeout;
@@ -83,6 +127,7 @@ $(function(event) {
 		firstLoad = false;
 	$('main').on('click', '[data-type="page-transition"]', function(event) {
 		event.preventDefault();
+   window.scrollTo(0, 0);
     $(this).addClass('current');
 		var newPage = $(this).attr('href');
 		if (!animating)
@@ -114,7 +159,7 @@ $(function(event) {
 		var section = $('<div class="pgtr-main-content ' + newSection + '"></div>');
 		section.load(url + ' .pgtr-main-content > *', function(event) {
 			$('main').html(section);
-			var delay = (transitionsSupported()) ? 1200 : 0;
+			var delay = (transitionsSupported()) ? 2000 : 0;
 			setTimeout(function() {
 				(section.hasClass('pgtr-index')) ? $('body').addClass('pgtr-index') : $('body').removeClass('pgtr-index');
 				(section.hasClass('pgtr-about')) ? $('body').addClass('pgtr-about') : $('body').removeClass('pgtr-about');
