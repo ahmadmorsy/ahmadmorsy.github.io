@@ -1,1056 +1,987 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" >
 
 <head>
-  <meta charset="UTF-8">
+
+   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Work | Ahmad Morsy</title>
 
-  <link rel="icon" type="image/png" sizes="32x32" href="img/site/favicon/favicon-32x32.png">
-  <link rel="icon" type="image/png" sizes="16x16" href="img/site/favicon/favicon-16x16.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
   <link href="https://ahmadmorsy.github.io/fonts/manrope.css" rel="stylesheet">
   <link href="https://ahmadmorsy.github.io/fonts/Graphik.css" rel="stylesheet">
 
-
-  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/work.css">
-
-  <!-- <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" /> -->
-
   <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous">
   </script>
-  <!-- <link rel="stylesheet" href="css/portfolio.css"> -->
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+
+
+    <script>
+      function fadeInPage() {
+        if (!window.AnimationEvent) { return; }
+        var fader = document.getElementById('fader');
+        fader.classList.add('fade-out');
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!window.AnimationEvent) { return }
+
+        var anchors = document.getElementsByTagName('a');
+
+        for (var idx=0; idx<anchors.length; idx+=1) {
+          if (anchors[idx].hostname !== window.location.hostname) {
+            return;
+          }
+
+          anchors[idx].addEventListener('click', function(event) {
+            var fader = document.getElementById('fader'),
+                anchor = event.currentTarget;
+
+            var listener = function() {
+              window.location = anchor.href;
+              fader.removeEventListener('animationend', listener);
+            };
+            fader.addEventListener('animationend', listener);
+
+            event.preventDefault();
+            fader.classList.add('fade-in');
+          });
+        }
+      });
+
+      window.addEventListener('pageshow', function (event) {
+        if (!event.persisted) {
+          return;
+        }
+        var fader = document.getElementById('fader');
+        fader.classList.remove('fade-in');
+      });
+
+
+      document.addEventListener('DOMContentLoaded', function() {
+
+            link = document.getElementById('link');
+        document.body.style.background = 'rgb(21,21,21)';
+        link.style.color = 'rgb(150,150,150)';
+      });
+    </script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+      <link rel="stylesheet" href="css/main.css">
+      <link rel="stylesheet" href="css/work.css">
+
+
+      <style>
+      body {
+          background: #121416;
+          }
+      </style>
+
 
 </head>
 
 <body class="pgtr-work">
+  <!-- <div class="blackout"></div> -->
+   <svg id="fader"></svg>
+    <script>fadeInPage()</script>
+
   <main>
     <div class="pgtr-main-content pgtr-work">
       <div class="overscroll-fix"></div>
       <div class="nav-bar">
         <div class="nav-logo">
-          <a href="index.html"><img src="http://ahmadmorsy.github.io/img/am-logo.svg" alt="am-logo" width="40" height="40"></a>
+          <a href="index.html"><img src="https://ahmadmorsy.github.io/img/am-logo.jpg" alt="am-logo" width="42" height="42"></a>
           <div class="logo-type">AHMAD<strong>.MORSY</strong></div>
         </div>
         <div class="nav-links">
-          <a class="pgtr-btn" href="index.html" data-type="page-transition">Hello.</a>
-          <a class="pgtr-btn" href="about.html" data-type="page-transition">About</a>
-          <a class="pgtr-btn current" href="work.html" data-type="page-transition">Work</a>
-          <a class="pgtr-btn" href="contact.html" data-type="page-transition">Contact</a>
+          <a class="pgtr-btn" href="./index.html" data-type="page-transition">Hello.</a>
+          <a class="pgtr-btn" href="./about.html" data-type="page-transition">About</a>
+          <a class="pgtr-btn current" href="./work.html" data-type="page-transition">Work</a>
+          <a class="pgtr-btn" href="./contact.html" data-type="page-transition">Contact</a>
         </div>
         <div class="mode-switch">
           <div class="sun hide">
-            <img src="img/site/sun-icon.png" style="width:30px;height:30px" />
+            <img src="https://ahmadmorsy.github.io/img/site/sun-icon.png" style="width:30px;height:30px" />
           </div>
           <div class="moon">
-            <img src="img/site/moon-icon.png" style="width:30px;height:30px" />
+            <img src="https://ahmadmorsy.github.io/img/site/moon-icon.png" style="width:30px;height:30px" />
           </div>
         </div>
-        <div class="nav-icon">
-          <div class="bar1"></div>
-          <div class="bar2"></div>
-          <div class="bar3"></div>
-        </div>
+                   <div class="nav-icon"></div>
+
+
       </div>
+
+
       <div class="page">
-        <div class="header">
-          <div class="bg--lined-thin"></div>
-          <div class="header-img"></div>
-          <div class="header-title blur-in">
-            <span>w</span>
-            <span>o</span>
-            <span>r</span>
-            <span>k</span>
+          <div class="header">
+            <div class="bg--lined-thin"></div>
+            <div class="header-img"></div>
+            <div class="header-title blur-in">
+              <span>w</span>
+              <span>o</span>
+              <span>r</span>
+              <span>k</span>
+            </div>
+          </div>
+          <div class="main">
+            <div class="block intro-block">
+              <p>Below is a collection of selected work I have done, and projects I have completed within the last five years. The collection contains a portfolio of school projects, commercial work and personal artwork.</p>
+              <p>I tried to sort and group the projects based on their categories, but in art every aspect seems to blend in with the rest to create a new piece or form.</p>
+            </div>
+            <div id="filters" class="block block--full clearfix">
+
+              <button class="filter active" data-filter="all">All</button>
+              <button class="filter" data-filter=".identity">Identity</button>
+              <button class="filter" data-filter=".logo">Logo</button>
+              <button class="filter" data-filter=".layout">Layout</button>
+              <button class="filter" data-filter=".print">Print</button>
+              <button class="filter" data-filter=".type">Type</button>
+              <button class="filter" data-filter=".motion">Motion</button>
+              <button class="filter" data-filter=".drawing">Drawing</button>
+              <button class="filter" data-filter=".illustration">Illustration</button>
+              <button class="filter" data-filter=".mixed">Mixed</button>
+              <button class="filter" data-filter=".public">Public</button>
+              <button class="filter" data-filter=".three">3-D</button>
+
+            </div>
+
+            <div class="block block--full">
+              <div id="projectList" class="">
+
+                <div class="project print illustration" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box">
+                      <img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/ca6a6947239e19f3a1d51a77d764cafe65f566c9/2fada/img/portfolio/md/organometry-04-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Organometry-04</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print illustration" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box">
+                      <img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/326493fd92b633f2396a0d029f8fd7af5e0ad997/fb2e3/img/portfolio/md/organometry-05-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Organometry-05</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print illustration" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box">
+                      <img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/512ad3dd8a5ac06ba5fbeb0d871ee63fab67cba5/d58b8/img/portfolio/md/organometry-06-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Organometry-06</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print illustration" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box">
+                      <img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/363935a1b9ea92bc6f7e9a1e4deebc5226449c8c/3e38f/img/portfolio/md/organometry-07-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Organometry-07</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print illustration" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box">
+                      <img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/90df09212cd8599d816f36c4219237dd9f19b419/94c23/img/portfolio/md/organometry-08-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Organometry-08</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box">
+                      <img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/a1765856e071a5de6e2d8104b56f9f9672c3516f/8cded/img/portfolio/md/collage-color-01-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box">
+                      <img class="img-main-md" src="img/portfolio/md/collage-color-02-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/1092c7fb0ea777e7bb6c52ae0951c65f2758ee3b/83dd2/img/portfolio/md/collage-color-03-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/collage-color-04-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/collage-color-05-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/collage-color-06-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/a6b319df041c87d631e411ce104699f1c8f70ff5/5df14/img/portfolio/md/fingerprints-01-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/a768bfca06e5a4160a38a16fa2220481ac696776/7589a/img/portfolio/md/fingerprints-02-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/fingerprints-03-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/fingerprints-04-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/fingerprints-05-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/fingerprints-06-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/d502d5fa0fc858e03659d3587e519ba8c86eae94/9e707/img/portfolio/md/pattern-01-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Pattern-01</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/9a4aeab47c2d5f980b237fb16e1f4f2e8d93bcf6/166c5/img/portfolio/md/pattern-02-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Pattern-02</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/66d518a0f9a452193c9575be5df9553c65663ba9/9119f/img/portfolio/md/pattern-03-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Pattern-03</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/aae66cef65438577c0de45af689d8cf2ed8da806/b4f74/img/portfolio/md/pattern-04-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Pattern-04</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/cb6623d53a14a309db4228890c76cfb9ffd0b3f5/fac17/img/portfolio/md/pattern-05-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Pattern-05</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/0a18a946bb685c6fc9e0a7ffc8b79f588f1e745e/71b3a/img/portfolio/md/pattern-06-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Pattern-06</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/9bf7c5dbfc3f1631f7fe8e1f42cef16c631970db/76f81/img/portfolio/md/pattern-07-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Pattern-07</p>
+
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/6fa7793468ce8d7496969d2ed214199a65e53065/343a3/img/portfolio/md/pattern-08-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Pattern-08</p>
+                      <p class="project-description">Pattern Study</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/3f427b8c24b8c5eb464c76676a46c2a5f0bd1a54/6bf2f/img/portfolio/md/contra-posto-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">contraposto</p>
+
+                      <p class="project-description">Charcoal Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/97f93b45d349cb9dcccea7e9c2889577748d5125/2cea3/img/portfolio/md/shadowed-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Shadowed</p>
+
+                      <p class="project-description">Charcoal Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/822980178dd50b78f457163b18277b88f78f8ea8/9a2c8/img/portfolio/md/too-late-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Too Late</p>
+
+                      <p class="project-description">Charcoal Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/999640cc0b736c3b687cc2cbf96b47beda891724/39ac4/img/portfolio/md/shade-comfort-1-3-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Shade (Comfort 1/3)</p>
+
+                      <p class="project-description">3-Series Drawings</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/47d408b1f0f1565ab76d02e37ddb03371a5dff4f/027fe/img/portfolio/md/elefant-comfort-2-3-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Elefant (Comfort 2/3)</p>
+
+                      <p class="project-description">3-Series Drawings</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/d50f12959a2352c65ef14c21e30fe5c9ce2826ba/6cc47/img/portfolio/md/wisdom-comfort-3-3-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Wisdom (Comfort 3/3)</p>
+
+                      <p class="project-description">3-Series Drawings</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/b7c2d91936e1eb7bfa9a4ea688e4d802c375a7c4/4186c/img/portfolio/md/unplanned-dinner-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Unplanned Dinner</p>
+
+                      <p class="project-description">Charcoal Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/21e9816d4ebdf0a0df77993eb015439c39b3ead8/77777/img/portfolio/md/favorite-things-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Favorite Things</p>
+
+                      <p class="project-description">Charcoal Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/elephant-redraw-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Elephant(not original work)</p>
+
+                      <p class="project-description">Charcoal Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project draming" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/e6e7d24b34a20db6652294341508306f6ce5d7de/e39e2/img/portfolio/md/king-of-nothing-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">King of Nothing</p>
+                      <p class="project-description">Soft Pastel Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/0480e8ef37d5869d4fa5e15c8221deee97037a05/a7788/img/portfolio/md/mother-aphrodite-grayscale-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Mother Aphrodite</p>
+
+                      <p class="project-description">Charcoal Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/3be169f2dfeef256f442c3ed9939df1445ad9494/a7cb9/img/portfolio/md/playful-moments-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Playful Moments</p>
+
+                      <p class="project-description">Pastel Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/33825362129a11a78d026a066f5ad3c7db25bf0d/e4790/img/portfolio/md/raven-head-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Raven-head</p>
+
+                      <p class="project-description">Pastel Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/6d0b18f6f00ccb5fc561e4b45baece102af8f38f/4501b/img/portfolio/md/tea-n-berry-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Tea-n-Berry</p>
+
+                      <p class="project-description">Pastel Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/2b556d627612f5f3287a9146bc8f89fe8613cc82/36bce/img/portfolio/md/suspect-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Suspect</p>
+
+                      <p class="project-description">Pastel Drawing</p>
+                    </div>
+                  </div>
+                </div> <div class="project Three" data-cat="Three" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/0938dfde7200219c031174cf6c8cf7967c8327e0/ea029/img/portfolio/md/clay-hand-01-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project three" data-cat="three" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/88d4ff5779f4eecd3277e188ea5d6f287f499dab/0159a/img/portfolio/md/clay-hand-02-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/490816485d31e94f44761f66e3356ba0c4ea90af/01d2c/img/portfolio/md/hope-leaves-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Hope Leaves</p>
+
+                      <p class="project-description">Acrylic on Foamcore</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed three" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/life-poster-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Life</p>
+
+                      <p class="project-description">Poster of 3D Assemblage</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/sun-string-art-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Sun</p>
+
+                      <p class="project-description">String Art</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed three" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/mood-swing-3D-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Mood Swing</p>
+
+                      <p class="project-description">Poster of 3D Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project three" data-cat="three" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/e68bf838deaec6d52fd7a120e9628266400c0b64/a27a2/img/portfolio/md/twist-of-events-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Twist of Events</p>
+
+                      <p class="project-description">Bulsa wood Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed three" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/cubography-stop-mo-clip-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Cubography</p>
+
+                      <p class="project-description">Stop Motion Clip</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed print" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/mistears-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Mistears</p>
+
+                      <p class="project-description">Photo Editing</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed print" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/mood-swing-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Mood Swing</p>
+
+                      <p class="project-description">Photo Editing</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/four-elements-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Four Elements</p>
+
+                      <p class="project-description">Colored Paper Collage</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed type" data-cat="type" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box">
+                      <img src="https://d33wubrfki0l68.cloudfront.net/43ceb73cd47cd8df04412085255b16999b0cc803/fd3a7/img/portfolio/md/steven-calligraphy-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Steven Arabic Calligraphy</p>
+
+                      <p class="project-description">Typography</p>
+                    </div>
+                  </div>
+                </div> <div class="project typegraphy" data-cat="typegraphy" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/1b21f085edf870f8683a679a38059a0f66e17cf4/0761a/img/portfolio/md/judge-not-blue-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Judge Not - Blue</p>
+                      <p class="project-description">Hand Lettering Poster</p>
+                    </div>
+                  </div>
+                </div> <div class="project typegraphy" data-cat="typegraphy" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/f7a19227a3c62435b4dc0656de14bd5375c7092f/15d4d/img/portfolio/md/judge-not-purple-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Judge Not - Purple</p>
+                      <p class="project-description">Hand Lettering Poster</p>
+                    </div>
+                  </div>
+                </div> <div class="project typegraphy" data-cat="typegraphy" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/841b6d1f070a1c3164db52b122bd475c35e94275/1ee20/img/portfolio/md/judge-not-red-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Judge Not - Red</p>
+                      <p class="project-description">Hand Lettering Poster</p>
+                    </div>
+                  </div>
+                </div> <div class="project type" data-cat="type" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/piotr-bauer-calligraphy-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Peter (Piotr) Arabic Calligraphy</p>
+
+                      <p class="project-description">Typography</p>
+                    </div>
+                  </div>
+                </div> <div class="project type" data-cat="type" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/7c6fa56d4277b261f2660253399950b676a36287/76d1e/img/portfolio/md/oscar-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Oscar Arabic Calligraphy</p>
+
+                      <p class="project-description">Typography</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/geometrik-01-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Geometrik 1</p>
+
+                      <p class="project-description">Geometric Composition</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/geometrik-02-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Geometrik 2</p>
+
+                      <p class="project-description">Geometric Composition</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/geometrik-03-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Geometrik 3</p>
+
+                      <p class="project-description">Geometric Composition</p>
+                    </div>
+                  </div>
+                </div> <div class="project print" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/geometrik-04-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Geometrik 4</p>
+
+                      <p class="project-description">Geometric Composition</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/eb235952ae7e76e346d312e0a72f50cc40b514c9/e5bd4/img/portfolio/md/time-1-3-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Time (1/3)</p>
+
+                      <p class="project-description">3-series Drawings</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/b1634e97ff63ddb5c1ea888cd6559895db5c2ff7/56747/img/portfolio/md/time-2-3-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Time (2/3)</p>
+
+                      <p class="project-description">3-series Drawings</p>
+                    </div>
+                  </div>
+                </div> <div class="project drawing" data-cat="drawing" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/6c55fbaa7d0367a0c10b7d27b6bf56faee6d9307/fb6b3/img/portfolio/md/time-3-3-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Time (3/3)</p>
+
+                      <p class="project-description">3-series Drawings</p>
+                    </div>
+                  </div>
+                </div> <div class="project print layout" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/a43959c13cee05a9f9610cf4f7a3538ecb0f43a4/b0121/img/portfolio/md/rape-poster-2-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Rape</p>
+
+                      <p class="project-description">Poster Layout Design</p>
+                    </div>
+                  </div>
+                </div> <div class="project print layout" data-cat="print" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/4732a1afdf14d7a120f612467c3686183cf04aac/140e2/img/portfolio/md/twisted-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Twisted</p>
+
+                      <p class="project-description">Poster Design</p>
+                    </div>
+                  </div>
+                </div> <div class="project print layout type illustration" data-cat="layout" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/9395d30c4e63415da20b5f76f7045cf5955caf17/8619e/img/portfolio/md/ado-poster-01-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Much ado about nothing 1</p>
+
+                      <p class="project-description">Play Poster</p>
+                    </div>
+                  </div>
+                </div> <div class="project print layout type illustration" data-cat="layout" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/08dcd18b9364e7b755760378b9f3c935c0d8cb16/50adf/img/portfolio/md/ado-poster-02-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Much ado about nothing 2</p>
+
+                      <p class="project-description">Play Poster</p>
+                    </div>
+                  </div>
+                </div> <div class="project print layout type illustration" data-cat="layout" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/c60e971a3ef978af918684a9ec5b7ece163eb739/127a3/img/portfolio/md/ado-poster-03-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Much ado about nothing 3</p>
+
+                      <p class="project-description">Play Poster</p>
+                    </div>
+                  </div>
+                </div> <div class="project print layout type illustration" data-cat="layout" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="https://d33wubrfki0l68.cloudfront.net/fa9fdae21fbd42593abef6b398842ab028420a4a/80644/img/portfolio/md/ado-poster-04-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Much ado about nothing 4</p>
+
+                      <p class="project-description">Play Poster</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/event-poster-01-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/event-poster-02-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/event-poster-03-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/event-poster-04-md.jpg" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> <div class="project mixed" data-cat="mixed" data-bound="" style="display: inline-block;">
+                  <div class="project-card">
+                    <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/tahiyya-kolthoum-md.png" alt=" "></div>
+
+                    <div class="project-info">
+                      <p class="project-title">Reaching Out</p>
+
+                      <p class="project-description">Clay Hand Sculpture</p>
+                    </div>
+                  </div>
+                </div> </div>
+            </div>
+          </div>
+          <div id="overlay">
+            <div class="pop-up flex-col block js-fillcolor">
+              <div class="flex-row">
+
+                <h3 class="project-title">Project Title</h3>
+              </div>
+
+              <div class="flex-row">
+
+                <p class="project-description">Project Description</p>
+              </div>
+
+              <div class="flex-row">
+
+                <p class="project-details">Some Details about project Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, urna vitae vehicula dignissim, tellus justo placerat justo, ac fermentum quam ante et erat. Maecenas in
+                  dignissim urna. Quisque vesquam! lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vel sint ullam eos id nulla error accusantium tenetur. Minus iure sit tempore totam. Corporis, cum natus. Excepturi nesciunt
+                  deserunt
+                  saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deleniti consequuntur quas! Ipsa, illum. A eligendi est, sequi commodi delectus temporibus, reprehenderit voluptas labore aspernatur ipsa iste cupiditate,
+                  aliquid
+                  magni? Lorem </p>
+              </div>
+
+              <div class="flex-row">
+                <div class="img-main-lg-box">
+                  <img src="" alt="" class="img-main-lg">
+
+                </div>
+              </div>
+              <div class="flex-row">
+                <div class="img-sec1-lg-box">
+                  <img src="" alt="" class="img-sec1-lg">
+
+                </div>
+                <div class="img-sec2-lg-box">
+                  <img src="" alt="" class="img-sec2-lg">
+
+                </div>
+              </div>
+
+              <div class="flex-row">
+                <div class="img-sec3-lg-box">
+                  <img src="" alt="" class="img-sec3-lg">
+
+                </div>
+              </div>
+            </div>
+            <button class="btn-close">×</button>
+
           </div>
         </div>
-        <div class="main">
-          <div class="block intro-block">
-            <p>Below is a collection of selected work I have done, and projects I have completed within the last five years. The collection contains a portfolio of school projects, commercial work and personal artwork.</p>
-            <p>I tried to sort and group the projects based on their categories, but in art every aspect seems to blend in with the rest to create a new piece or form.</p>
-          </div>
-          <div id="filters" class="block block--full clearfix">
 
-            <button class="filter active" data-filter="all">All</button>
-            <button class="filter" data-filter=".identity">Identity</button>
-            <button class="filter" data-filter=".logo">Logo</button>
-            <button class="filter" data-filter=".layout">Layout</button>
-            <button class="filter" data-filter=".print">Print</button>
-            <button class="filter" data-filter=".type">Type</button>
-            <button class="filter" data-filter=".motion">Motion</button>
-            <button class="filter" data-filter=".drawing">Drawing</button>
-            <button class="filter" data-filter=".illustration">Illustration</button>
-            <button class="filter" data-filter=".mixed">Mixed</button>
-            <button class="filter" data-filter=".public">Public</button>
-            <button class="filter" data-filter=".three">3-D</button>
 
-          </div>
-
-          <div class="block block--full">
-            <div id="projectList">
-
-              <div class="project print illustration" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box">
-                    <img class="img-main-md" src="img/portfolio/md/organometry-04-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Organometry-04</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print illustration" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box">
-                    <img class="img-main-md" src="img/portfolio/md/organometry-05-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Organometry-05</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print illustration" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box">
-                    <img class="img-main-md" src="img/portfolio/md/organometry-06-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Organometry-06</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print illustration" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box">
-                    <img class="img-main-md" src="img/portfolio/md/organometry-07-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Organometry-07</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print illustration" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box">
-                    <img class="img-main-md" src="img/portfolio/md/organometry-08-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Organometry-08</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box">
-                    <img class="img-main-md" src="img/portfolio/md/collage-color-01-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box">
-                    <img class="img-main-md" src="img/portfolio/md/collage-color-02-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/collage-color-03-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/collage-color-04-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/collage-color-05-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/collage-color-06-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/fingerprints-01-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/fingerprints-02-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/fingerprints-03-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/fingerprints-04-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/fingerprints-05-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/fingerprints-06-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/pattern-01-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Pattern-01</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/pattern-02-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Pattern-02</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/pattern-03-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Pattern-03</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/pattern-04-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Pattern-04</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/pattern-05-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Pattern-05</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/pattern-06-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Pattern-06</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/pattern-07-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Pattern-07</p>
-
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/pattern-08-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Pattern-08</p>
-                    <p class="project-description">Pattern Study</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/contra-posto-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">contraposto</p>
-
-                    <p class="project-description">Charcoal Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/shadowed-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Shadowed</p>
-
-                    <p class="project-description">Charcoal Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/too-late-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Too Late</p>
-
-                    <p class="project-description">Charcoal Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/shade-comfort-1-3-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Shade (Comfort 1/3)</p>
-
-                    <p class="project-description">3-Series Drawings</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/elefant-comfort-2-3-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Elefant (Comfort 2/3)</p>
-
-                    <p class="project-description">3-Series Drawings</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/wisdom-comfort-3-3-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Wisdom (Comfort 3/3)</p>
-
-                    <p class="project-description">3-Series Drawings</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/unplanned-dinner-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Unplanned Dinner</p>
-
-                    <p class="project-description">Charcoal Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/favorite-things-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Favorite Things</p>
-
-                    <p class="project-description">Charcoal Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/elephant-redraw-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Elephant(not original work)</p>
-
-                    <p class="project-description">Charcoal Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project draming" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/king-of-nothing-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">King of Nothing</p>
-                    <p class="project-description">Soft Pastel Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/mother-aphrodite-grayscale-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Mother Aphrodite</p>
-
-                    <p class="project-description">Charcoal Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/playful-moments-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Playful Moments</p>
-
-                    <p class="project-description">Pastel Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/raven-head-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Raven-head</p>
-
-                    <p class="project-description">Pastel Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/tea-n-berry-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Tea-n-Berry</p>
-
-                    <p class="project-description">Pastel Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/suspect-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Suspect</p>
-
-                    <p class="project-description">Pastel Drawing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project Three" data-cat="Three">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/clay-hand-01-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project three" data-cat="three">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/clay-hand-02-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/hope-leaves-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Hope Leaves</p>
-
-                    <p class="project-description">Acrylic on Foamcore</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed three" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/life-poster-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Life</p>
-
-                    <p class="project-description">Poster of 3D Assemblage</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/sun-string-art-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Sun</p>
-
-                    <p class="project-description">String Art</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed three" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/mood-swing-3D-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Mood Swing</p>
-
-                    <p class="project-description">Poster of 3D Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project three" data-cat="three">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/twist-of-events-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Twist of Events</p>
-
-                    <p class="project-description">Bulsa wood Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed three" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/cubography-stop-mo-clip-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Cubography</p>
-
-                    <p class="project-description">Stop Motion Clip</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed print" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/mistears-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Mistears</p>
-
-                    <p class="project-description">Photo Editing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed print" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/mood-swing-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Mood Swing</p>
-
-                    <p class="project-description">Photo Editing</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/four-elements-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Four Elements</p>
-
-                    <p class="project-description">Colored Paper Collage</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed type" data-cat="type">
-                <div class="project-card">
-                  <div class="img-main-md-box">
-                    <img src="img/portfolio/md/steven-calligraphy-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Steven Arabic Calligraphy</p>
-
-                    <p class="project-description">Typography</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project typegraphy" data-cat="typegraphy">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/judge-not-blue-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Judge Not - Blue</p>
-                    <p class="project-description">Hand Lettering Poster</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project typegraphy" data-cat="typegraphy">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/judge-not-purple-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Judge Not - Purple</p>
-                    <p class="project-description">Hand Lettering Poster</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project typegraphy" data-cat="typegraphy">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/judge-not-red-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Judge Not - Red</p>
-                    <p class="project-description">Hand Lettering Poster</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project type" data-cat="type">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/piotr-bauer-calligraphy-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Peter (Piotr) Arabic Calligraphy</p>
-
-                    <p class="project-description">Typography</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project type" data-cat="type">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/oscar-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Oscar Arabic Calligraphy</p>
-
-                    <p class="project-description">Typography</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/geometrik-01-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Geometrik 1</p>
-
-                    <p class="project-description">Geometric Composition</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/geometrik-02-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Geometrik 2</p>
-
-                    <p class="project-description">Geometric Composition</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/geometrik-03-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Geometrik 3</p>
-
-                    <p class="project-description">Geometric Composition</p>
-                  </div>
-                </div>
-              </div>
-              <div class="project print" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/geometrik-04-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Geometrik 4</p>
-
-                    <p class="project-description">Geometric Composition</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/time-1-3-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Time (1/3)</p>
-
-                    <p class="project-description">3-series Drawings</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/time-2-3-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Time (2/3)</p>
-
-                    <p class="project-description">3-series Drawings</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project drawing" data-cat="drawing">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/time-3-3-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Time (3/3)</p>
-
-                    <p class="project-description">3-series Drawings</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print layout" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/rape-poster-2-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Rape</p>
-
-                    <p class="project-description">Poster Layout Design</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print layout" data-cat="print">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/twisted-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Twisted</p>
-
-                    <p class="project-description">Poster Design</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project print layout type illustration" data-cat="layout">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/ado-poster-01-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Much ado about nothing 1</p>
-
-                    <p class="project-description">Play Poster</p>
-                  </div>
-                </div>
-              </div>
-              <div class="project print layout type illustration" data-cat="layout">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/ado-poster-02-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Much ado about nothing 2</p>
-
-                    <p class="project-description">Play Poster</p>
-                  </div>
-                </div>
-              </div>
-              <div class="project print layout type illustration" data-cat="layout">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/ado-poster-03-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Much ado about nothing 3</p>
-
-                    <p class="project-description">Play Poster</p>
-                  </div>
-                </div>
-              </div>
-
-
-              <div class="project print layout type illustration" data-cat="layout">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/ado-poster-04-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Much ado about nothing 4</p>
-
-                    <p class="project-description">Play Poster</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/event-poster-01-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/event-poster-02-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/event-poster-03-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/event-poster-04-md.jpg" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-              <div class="project mixed" data-cat="mixed">
-                <div class="project-card">
-                  <div class="img-main-md-box"><img class="img-main-md" src="img/portfolio/md/tahiyya-kolthoum-md.png" alt=" " /></div>
-
-                  <div class="project-info">
-                    <p class="project-title">Reaching Out</p>
-
-                    <p class="project-description">Clay Hand Sculpture</p>
-                  </div>
-                </div>
-              </div>
-
-
-
-
-            </div>
-          </div>
-        </div>
-        <div id="overlay">
-          <div class="pop-up flex-col block js-fillcolor">
-            <div class="flex-row">
-
-              <h3 class="project-title">Project Title</h3>
-            </div>
-
-            <div class="flex-row">
-
-              <p class="project-description">Project Description</p>
-            </div>
-
-            <div class="flex-row">
-
-              <p class="project-details">Some Details about project Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin pellentesque, urna vitae vehicula dignissim, tellus justo placerat justo, ac fermentum quam ante et erat. Maecenas in
-                dignissim urna. Quisque vesquam! lorem Lorem ipsum dolor sit amet consectetur adipisicing elit. Sapiente vel sint ullam eos id nulla error accusantium tenetur. Minus iure sit tempore totam. Corporis, cum natus. Excepturi nesciunt
-                deserunt
-                saepe. Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatem deleniti consequuntur quas! Ipsa, illum. A eligendi est, sequi commodi delectus temporibus, reprehenderit voluptas labore aspernatur ipsa iste cupiditate,
-                aliquid
-                magni? Lorem </p>
-            </div>
-
-            <div class="flex-row">
-              <div class="img-main-lg-box">
-                <img src="" alt="" class="img-main-lg">
-
-              </div>
-            </div>
-            <div class="flex-row">
-              <div class="img-sec1-lg-box">
-                <img src="" alt="" class="img-sec1-lg">
-
-              </div>
-              <div class="img-sec2-lg-box">
-                <img src="" alt="" class="img-sec2-lg">
-
-              </div>
-            </div>
-
-            <div class="flex-row">
-              <div class="img-sec3-lg-box">
-                <img src="" alt="" class="img-sec3-lg">
-
-              </div>
-            </div>
-          </div>
-          <button class="btn-close">&times;</button>
-
-        </div>
       </div>
   </main>
-  <div class="pgtr-cover-layer"></div>
-  <div class="pgtr-loading-bar"></div>
+       <div class="nav-cover">
+         <div class="nav-links">
+          <a class="pgtr-btn current" href="./index.html" data-type="page-transition">Hello.</a>
+          <a class="pgtr-btn" href="./about.html" data-type="page-transition">About</a>
+          <a class="pgtr-btn" href="./work.html" data-type="page-transition">Work</a>
+          <a class="pgtr-btn" href="./contact.html" data-type="page-transition">Contact</a>
+         </div>
+       </div>
 
-  <!-- <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script> -->
-  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.2.2/jquery.min.js"></script>
-  <script type="text/javascript" src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-  <!-- <script src="js/jquery.mixitup.min.js"></script> -->
-  <!-- <script src="js/index.js"></script> -->
-  <script type="text/javascript">
+
+  <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script> -->
+  <script type="text/javascript"src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/mixitup/2.1.11/jquery.mixitup.js"></script>
+  <script src="js/main.js"></script>
+  <script src="js/work.js"></script>
+
+
+<script>
+
+
   // On document ready:
   $( document ).ready(function() {
     $(function(){
@@ -1062,9 +993,8 @@
         sort: 'order:asc'
       },
       animation: {
-        effects: "fade",
-        duration: 500,
-        easing: "ease",
+        easing: "cubic-bezier(0.86, 0, 0.07, 1)",
+        duration: 1200,
         perspectiveDistance: "3000",
         perspectiveOrigin: "50% 50%"
       },
@@ -1080,14 +1010,11 @@
     });
     }); });
   </script>
-  <script src="js/index.js"></script>
-  <script src="js/work.js"></script>
 
 
 
-
-  <!-- <script src="js/portfolio.js"></script> -->
 
 </body>
+
 
 </html>

@@ -1,159 +1,229 @@
 <!DOCTYPE html>
-<html lang="en" class="no-js">
+<html lang="en" >
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>About | Ahmad Morsy</title>
 
-    <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
-    <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
-    <link href="https://ahmadmorsy.github.io/fonts/manrope.css" rel="stylesheet">
-    <link href="https://ahmadmorsy.github.io/fonts/Graphik.css" rel="stylesheet">
+   <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About | Ahmad Morsy</title>
 
-    <script async="" src="//www.google-analytics.com/analytics.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous">
+  <link rel="icon" type="image/png" sizes="32x32" href="../../assets/favicon/favicon-32x32.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="../../assets/favicon/favicon-16x16.png">
+  <link href="https://ahmadmorsy.github.io/fonts/manrope.css" rel="stylesheet">
+  <link href="https://ahmadmorsy.github.io/fonts/Graphik.css" rel="stylesheet">
+
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/modernizr/2.8.3/modernizr.min.js" integrity="sha256-0rguYS0qgS6L4qVzANq4kjxPLtvnp5nn2nB5G1lWRv4=" crossorigin="anonymous">
+  </script>
+  <!-- <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css"> -->
+
+
+    <script>
+      function fadeInPage() {
+        if (!window.AnimationEvent) { return; }
+        var fader = document.getElementById('fader');
+        fader.classList.add('fade-out');
+      }
+
+      document.addEventListener('DOMContentLoaded', function() {
+        if (!window.AnimationEvent) { return }
+
+        var anchors = document.getElementsByTagName('a');
+
+        for (var idx=0; idx<anchors.length; idx+=1) {
+          if (anchors[idx].hostname !== window.location.hostname) {
+            return;
+          }
+
+          anchors[idx].addEventListener('click', function(event) {
+            var fader = document.getElementById('fader'),
+                anchor = event.currentTarget;
+
+            var listener = function() {
+              window.location = anchor.href;
+              fader.removeEventListener('animationend', listener);
+            };
+            fader.addEventListener('animationend', listener);
+
+            event.preventDefault();
+            fader.classList.add('fade-in');
+          });
+        }
+      });
+
+      window.addEventListener('pageshow', function (event) {
+        if (!event.persisted) {
+          return;
+        }
+        var fader = document.getElementById('fader');
+        fader.classList.remove('fade-in');
+      });
+
+
+      document.addEventListener('DOMContentLoaded', function() {
+
+            link = document.getElementById('link');
+        document.body.style.background = 'rgb(21,21,21)';
+        link.style.color = 'rgb(150,150,150)';
+      });
     </script>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="https://unpkg.com/tachyons@4.10.0/css/tachyons.min.css" />
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
+
+
+      <link rel="stylesheet" href="css/main.css">
+
+
+      <style>
+      body {
+          background: #121416;
+          }
+     </style>
 
 </head>
 
 <body class="pgtr-about">
-      <main>
-        <div class="pgtr-main-content pgtr-about">
-            <div class="overscroll-fix"></div>
-            <div class="nav-bar">
-                <div class="nav-logo">
-                    <a href="index.html"><img src="http://ahmadmorsy.github.io/img/am-logo.svg" alt="am-logo" width="40" height="40"></a>
-                    <div class="logo-type">AHMAD<strong>.MORSY</strong></div>
-                </div>
-                <div class="nav-links">
-                    <a class="pgtr-btn" href="index.html" data-type="page-transition">Hello.</a>
-                    <a class="pgtr-btn current" href="about.html" data-type="page-transition">About</a>
-                    <a class="pgtr-btn" href="work.html" data-type="page-transition">Work</a>
-                    <a class="pgtr-btn" href="contact.html" data-type="page-transition">Contact</a>
-                </div>
-                <div class="mode-switch">
-                  <div class="sun hide">
-                    <img src="img/site/sun-icon.png" style="width:30px;height:30px" />
-                  </div>
-                  <div class="moon">
-                    <img src="img/site/moon-icon.png" style="width:30px;height:30px" />
-                  </div>
-                </div>
-                <div class="nav-icon">
-                    <div class="bar1"></div>
-                    <div class="bar2"></div>
-                    <div class="bar3"></div>
-                </div>
-            </div>
-            <div class="page">
-                <div class="header">
-                    <div class="bg--lined-thin"></div>
-                    <div class="header-img"></div>
-                    <div class="header-title blur-in">
-                        <span>a</span>
-                        <span>b</span>
-                        <span>o</span>
-                        <span>u</span>
-                        <span>t</span>
+  <!-- <div class="blackout"></div> -->
+   <svg id="fader"></svg>
+    <script>fadeInPage()</script>
+
+  <main>
+    <div class="pgtr-main-content pgtr-about">
+      <div class="overscroll-fix"></div>
+      <div class="nav-bar">
+        <div class="nav-logo">
+          <a href="index.html"><img src="https://ahmadmorsy.github.io/img/am-logo.jpg" alt="am-logo" width="42" height="42"></a>
+          <div class="logo-type">AHMAD<strong>.MORSY</strong></div>
+        </div>
+        <div class="nav-links">
+          <a class="pgtr-btn" href="./index.html" data-type="page-transition">Hello.</a>
+          <a class="pgtr-btn current" href="./about.html" data-type="page-transition">About</a>
+          <a class="pgtr-btn" href="./work.html" data-type="page-transition">Work</a>
+          <a class="pgtr-btn" href="./contact.html" data-type="page-transition">Contact</a>
+        </div>
+        <div class="mode-switch">
+          <div class="sun hide">
+            <img src="https://ahmadmorsy.github.io/img/site/sun-icon.png" style="width:30px;height:30px" />
+          </div>
+          <div class="moon">
+            <img src="https://ahmadmorsy.github.io/img/site/moon-icon.png" style="width:30px;height:30px" />
+          </div>
+        </div>
+                   <div class="nav-icon"></div>
+
+
+      </div>
+
+
+        <div class="page">
+                    <div class="header">
+                        <div class="bg--lined-thin"></div>
+                        <div class="header-img"></div>
+                        <div class="header-title blur-in">
+                            <span>a</span>
+                            <span>b</span>
+                            <span>o</span>
+                            <span>u</span>
+                            <span>t</span>
+                        </div>
+                    </div>
+                    <div class="main">
+                      <div class="block">
+                            <div id="wrapper">
+                              <div id="container">
+                                <h2 class="title--large">Timeline</h2>
+                                <ul class="timeline">
+                                  <li class="fadeOnScroll">
+                                    <h3 class="year">2008</h3>
+                                    <ul>
+                                      <li>
+                                        <h4 class="title--small">AIN SHAMS UNIVERSITY - Egypt</h4>
+                                        <h5 class="subtitle--small">Faculty of Engineering</h5>
+
+                                        <p class="details"><strong>Degree: </strong>Bachelor of Electrical Power Engineering</p>
+                                        <p class="details"><strong>Experience: </strong>Beside the great knowledge I've acquired about electrical systems, and how such systems connect everything our technology is based on today, I also gained the great skill of problem solving. Engineers are taught, programmed to be accurate, to solve whatever problems they face. Some people would call me stubborn, because whatever situation I find myself in, I keep applying the trial-and-error technique till I find a solution.</p>
+                                      </li>
+                                      <li>
+                                        <h4 class="title--small">MET - Egypt</h4>
+                                        <h5 class="subtitle--small">Technical Engineer</h5>
+                                        <p class="details"><strong>Responsibilities: </strong>I was responible for designing UI/UX for touch screens and SCADA systems and working with engineers from the control department to successfully connect such systems to their programmable logic controller (PLC) units. MET is the TOSHIBA system integrator in Egypt that implements control systems in big factories and power plants such as Nestlé. </p>
+                                        <p class="details"><strong>Experience: </strong>Beside the knowledge I've gained from being out in the actual world and dealing with existing problems beyond the folds of the books we studied in school, I've also developed a good bunch of social skills as part of the job required meeting managers and maintenance engineers to discuss how my company can help them grow their business and enhance the quality of their production.</p>
+                                      </li>
+
+                                    </ul>
+                                  </li>
+                                  <li class="fadeOnScroll">
+                                    <h3 class="year">2012</h3>
+                                    <ul>
+                                  <li>
+                                    <h4 class="title--small">Company</h4>
+                                    <h5 class="subtitle--small">Job Title</h5>
+                                    <p class="details"><strong>Responsibilities: </strong>I was responible for designing UI/UX for touch screens and SCADA systems and working with engineers from the control department to successfully connect such systems to their programmable logic controller (PLC) units. MET is the TOSHIBA system integrator in Egypt that implements control systems in big factories and power plants such as Nestlé. </p>
+                                    <p class="details"><strong>Experience: </strong>Beside the knowledge I've gained from being out in the actual world and dealing with existing problems beyond the folds of the books we studied in school, I've also developed a good bunch of social skills as part of the job required meeting managers and maintenance engineers to discuss how my company can help them grow their business and enhance the quality of their production.</p>
+                                      </li>
+                                      <li>
+                                        <h4 class="title--small">Company</h4>
+                                        <h5 class="subtitle--small">Job Title</h5>
+                                        <p class="details"><strong>Responsibilities: </strong>I was responible for designing UI/UX for touch screens and SCADA systems and working with engineers from the control department to successfully connect such systems to their programmable logic controller (PLC) units. MET is the TOSHIBA system integrator in Egypt that implements control systems in big factories and power plants such as Nestlé. </p>
+                                        <p class="details"><strong>Experience: </strong>Beside the knowledge I've gained from being out in the actual world and dealing with existing problems beyond the folds of the books we studied in school, I've also developed a good bunch of social skills as part of the job required meeting managers and maintenance engineers to discuss how my company can help them grow their business and enhance the quality of their production.</p>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li class="fadeOnScroll">
+                                    <h3 class="year">2015</h3>
+                                    <ul>
+                                      <li>
+                                        <h4 class="title--small">Company</h4>
+                                        <h5 class="subtitle--small">Job Title</h5>
+                                        <h4 class="title--small">Company</h4>
+                                        <h5 class="subtitle--small">Job Title</h5>
+                                        <p class="details"><strong>Responsibilities: </strong>I was responible for designing UI/UX for touch screens and SCADA systems and working with engineers from the control department to successfully connect such systems to their programmable logic controller (PLC) units. MET is the TOSHIBA system integrator in Egypt that implements control systems in big factories and power plants such as Nestlé. </p>
+                                        <p class="details"><strong>Experience: </strong>Beside the knowledge I've gained from being out in the actual world and dealing with existing problems beyond the folds of the books we studied in school, I've also developed a good bunch of social skills as part of the job required meeting managers and maintenance engineers to discuss how my company can help them grow their business and enhance the quality of their production.</p>
+                                      </li>
+                                      <li>
+                                        <h4 class="title--small">Company</h4>
+                                        <h5 class="subtitle--small">Job Title</h5>
+                                        <p class="details"><strong>Responsibilities: </strong>I was responible for designing UI/UX for touch screens and SCADA systems and working with engineers from the control department to successfully connect such systems to their programmable logic controller (PLC) units. MET is the TOSHIBA system integrator in Egypt that implements control systems in big factories and power plants such as Nestlé. </p>
+                                        <p class="details"><strong>Experience: </strong>Beside the knowledge I've gained from being out in the actual world and dealing with existing problems beyond the folds of the books we studied in school, I've also developed a good bunch of social skills as part of the job required meeting managers and maintenance engineers to discuss how my company can help them grow their business and enhance the quality of their production.</p>
+                                      </li>
+                                    </ul>
+                                  </li>
+                                  <li class="fadeOnScroll">
+                                    <h3 class="year">2018</h3>
+                                    <ul>
+                                      <li>
+                                        <h4 class="title--small">Company</h4>
+                                        <h5 class="subtitle--small">Job Title</h5>
+                                        <p class="details">Detail about the job description and responsibilities.</p>
+                                      </li>
+
+                                    </ul>
+                                  </li>
+                                  <li>
+                                    <h3 class="year">Today</h3>
+                                  </li>
+                                </ul>
+                              </div>
+                            </div>
+                          </div>
                     </div>
                 </div>
-                <div class="main">
-                  <div class="block">
-                        <div id="wrapper">
-                          <div id="container">
-                            <h2 class="title--large">Timeline</h2>
-                            <ul class="timeline">
-                              <li class="fadeOnScroll">
-                                <h3 class="year">2008</h3>
-                                <ul>
-                                  <li>
-                                    <h4 class="title--small">AIN SHAMS UNIVERSITY - Egypt</h4>
-                                    <h5 class="subtitle--small">Faculty of Engineering</h5>
+  </main>
+       <div class="nav-cover">
+         <div class="nav-links">
+          <a class="pgtr-btn current" href="./index.html" data-type="page-transition">Hello.</a>
+          <a class="pgtr-btn" href="./about.html" data-type="page-transition">About</a>
+          <a class="pgtr-btn" href="./work.html" data-type="page-transition">Work</a>
+          <a class="pgtr-btn" href="./contact.html" data-type="page-transition">Contact</a>
+         </div>
+       </div>
 
-                                    <p class="details"><strong>Degree: </strong>Bachelor of Electrical Power Engineering</p>
-                                    <p class="details"><strong>Experience: </strong>Beside the great knowledge I've acquired about electrical systems, and how such systems connect everything our technology is based on today, I also gained the great skill of problem solving. Engineers are taught, programmed to be accurate, to solve whatever problems they face. Some people would call me stubborn, because whatever situation I find myself in, I keep applying the trial-and-error technique till I find a solution.</p>
-                                  </li>
-                                  <li>
-                                    <h4 class="title--small">MET - Egypt</h4>
-                                    <h5 class="subtitle--small">Technical Engineer</h5>
-                                    <p class="details"><strong>Responsibilities: </strong>I was responible for designing UI/UX for touch screens and SCADA systems and working with engineers from the control department to successfully connect such systems to their programmable logic controller (PLC) units. MET is the TOSHIBA system integrator in Egypt that implements control systems in big factories and power plants such as Nestlé. </p>
-                                    <p class="details"><strong>Experience: </strong>Beside the knowledge I've gained from being out in the actual world and dealing with existing problems beyond the folds of the books we studied in school, I've also developed a good bunch of social skills as part of the job required meeting managers and maintenance engineers to discuss how my company can help them grow their business and enhance the quality of their production.</p>
-                                  </li>
 
-                                </ul>
-                              </li>
-                              <li class="fadeOnScroll">
-                                <h3 class="year">2012</h3>
-                                <ul>
-                              <li>
-                                <h4 class="title--small">Company</h4>
-                                <h5 class="subtitle--small">Job Title</h5>
-                                <p class="details"><strong>Responsibilities: </strong>I was responible for designing UI/UX for touch screens and SCADA systems and working with engineers from the control department to successfully connect such systems to their programmable logic controller (PLC) units. MET is the TOSHIBA system integrator in Egypt that implements control systems in big factories and power plants such as Nestlé. </p>
-                                <p class="details"><strong>Experience: </strong>Beside the knowledge I've gained from being out in the actual world and dealing with existing problems beyond the folds of the books we studied in school, I've also developed a good bunch of social skills as part of the job required meeting managers and maintenance engineers to discuss how my company can help them grow their business and enhance the quality of their production.</p>
-                                  </li>
-                                  <li>
-                                    <h4 class="title--small">Company</h4>
-                                    <h5 class="subtitle--small">Job Title</h5>
-                                    <p class="details"><strong>Responsibilities: </strong>I was responible for designing UI/UX for touch screens and SCADA systems and working with engineers from the control department to successfully connect such systems to their programmable logic controller (PLC) units. MET is the TOSHIBA system integrator in Egypt that implements control systems in big factories and power plants such as Nestlé. </p>
-                                    <p class="details"><strong>Experience: </strong>Beside the knowledge I've gained from being out in the actual world and dealing with existing problems beyond the folds of the books we studied in school, I've also developed a good bunch of social skills as part of the job required meeting managers and maintenance engineers to discuss how my company can help them grow their business and enhance the quality of their production.</p>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li class="fadeOnScroll">
-                                <h3 class="year">2015</h3>
-                                <ul>
-                                  <li>
-                                    <h4 class="title--small">Company</h4>
-                                    <h5 class="subtitle--small">Job Title</h5>
-                                    <h4 class="title--small">Company</h4>
-                                    <h5 class="subtitle--small">Job Title</h5>
-                                    <p class="details"><strong>Responsibilities: </strong>I was responible for designing UI/UX for touch screens and SCADA systems and working with engineers from the control department to successfully connect such systems to their programmable logic controller (PLC) units. MET is the TOSHIBA system integrator in Egypt that implements control systems in big factories and power plants such as Nestlé. </p>
-                                    <p class="details"><strong>Experience: </strong>Beside the knowledge I've gained from being out in the actual world and dealing with existing problems beyond the folds of the books we studied in school, I've also developed a good bunch of social skills as part of the job required meeting managers and maintenance engineers to discuss how my company can help them grow their business and enhance the quality of their production.</p>
-                                  </li>
-                                  <li>
-                                    <h4 class="title--small">Company</h4>
-                                    <h5 class="subtitle--small">Job Title</h5>
-                                    <p class="details"><strong>Responsibilities: </strong>I was responible for designing UI/UX for touch screens and SCADA systems and working with engineers from the control department to successfully connect such systems to their programmable logic controller (PLC) units. MET is the TOSHIBA system integrator in Egypt that implements control systems in big factories and power plants such as Nestlé. </p>
-                                    <p class="details"><strong>Experience: </strong>Beside the knowledge I've gained from being out in the actual world and dealing with existing problems beyond the folds of the books we studied in school, I've also developed a good bunch of social skills as part of the job required meeting managers and maintenance engineers to discuss how my company can help them grow their business and enhance the quality of their production.</p>
-                                  </li>
-                                </ul>
-                              </li>
-                              <li class="fadeOnScroll">
-                                <h3 class="year">2018</h3>
-                                <ul>
-                                  <li>
-                                    <h4 class="title--small">Company</h4>
-                                    <h5 class="subtitle--small">Job Title</h5>
-                                    <p class="details">Detail about the job description and responsibilities.</p>
-                                  </li>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
+  <script src="js/main.js"></script>
 
-                                </ul>
-                              </li>
-                              <li>
-                                <h3 class="year">Today</h3>
-                              </li>
-                            </ul>
-                          </div>
-                        </div>
-                      </div>
-                </div>
-            </div>
 
-        </div>
-    </main>
-    <div id="xycoordinates"></div>
-    <div class="pgtr-cover-layer"></div>
-    <div class="pgtr-loading-bar"></div>
-    <a class="back-to-top js-back-to-top" href="#" data-offset="100" data-duration="300">
-  <svg class="icon" viewBox="0 0 16 16"><title>Go to top of page</title><g stroke-width="1" stroke="currentColor"><polyline fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-miterlimit="10" points="15.5,11.5 8,4 0.5,11.5 "></polyline></g></svg>
-</a>
-    <!-- <script src="js/jquery-2.1.1.js"></script> -->
-    <script src='https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.0/jquery.min.js'></script>
-    <script src="js/index.js"></script>
+
+
 </body>
 
 </html>
