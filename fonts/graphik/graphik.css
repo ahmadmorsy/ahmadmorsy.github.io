@@ -1,0 +1,179 @@
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-thin.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-thin.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-thin.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-thin.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-thin.svg#graphik-thin') format('svg');
+	font-weight: 100;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-thinitalic.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-thinitalic.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-thinitalic.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-thinitalic.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-thinitalic.svg#graphik-thinitalic') format('svg');
+	font-weight: 100;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-extralight.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-extralight.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-extralight.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-extralight.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-extralight.svg#graphik-extralight') format('svg');
+	font-weight: 200;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-extralightitalic.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-extralightitalic.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-extralightitalic.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-extralightitalic.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-extralightitalic.svg#graphik-extralightitalic') format('svg');
+	font-weight: 200;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-light.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-light.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-light.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-light.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-light.svg#graphik-light') format('svg');
+	font-weight: 300;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-lightitalic.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-lightitalic.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-lightitalic.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-lightitalic.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-lightitalic.svg#graphik-lightitalic') format('svg');
+	font-weight: 300;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-regular.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-regular.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-regular.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-regular.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-regular.svg#graphik-regular') format('svg');
+	font-weight: 400;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-regularitalic.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-regularitalic.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-regularitalic.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-regularitalic.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-regularitalic.svg#graphik-regularitalic') format('svg');
+	font-weight: 400;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-medium.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-medium.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-medium.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-medium.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-medium.svg#graphik-medium') format('svg');
+	font-weight: 500;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-mediumitalic.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-mediumitalic.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-mediumitalic.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-mediumitalic.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-mediumitalic.svg#graphik-mediumitalic') format('svg');
+	font-weight: 500;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-semibold.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-semibold.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-semibold.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-semibold.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-semibold.svg#graphik-semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-semibold.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-semibold.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-semibold.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-semibold.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-semibold.svg#graphik-semibold') format('svg');
+	font-weight: 600;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-bold.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-bold.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-bold.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-bold.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-bold.svg#graphik-bold') format('svg');
+	font-weight: 700;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-bolditalic.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-bolditalic.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-bolditalic.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-bolditalic.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-bolditalic.svg#graphik-bolditalic') format('svg');
+	font-weight: 700;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-black.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-black.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-black.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-black.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-black.svg#graphik-black') format('svg');
+	font-weight: 800;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-blackitalic.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-blackitalic.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-blackitalic.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-blackitalic.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-blackitalic.svg#graphik-blackitalic') format('svg');
+	font-weight: 800;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-super.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-super.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-super.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-super.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-super.svg#graphik-super') format('svg');
+	font-weight: 900;
+	font-style: normal;
+	font-stretch: normal;
+	font-display: fallback
+}
+
+@font-face {
+	font-family: 'graphik';
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-superitalic.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/graphik/graphik-superitalic.eot?#iefix') format('embedded-opentype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-superitalic.woff') format('woff'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-superitalic.ttf') format('truetype'), url('https://ahmadmorsy.github.io/fonts/graphik/graphik-superitalic.svg#graphik-superitalic') format('svg');
+	font-weight: 900;
+	font-style: italic;
+	font-stretch: normal;
+	font-display: fallback
+}

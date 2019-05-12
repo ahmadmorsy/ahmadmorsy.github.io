@@ -1,0 +1,48 @@
+@font-face {
+    font-family:"sofia pro";
+    src:url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-ultralight.woff2") format("woff2"),url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-ultralight.woff") format("woff"),url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-ultralight.otf") format("opentype");
+    font-style:normal;
+    font-weight:200;
+}
+
+
+@font-face {
+    font-family:"sofia pro";
+    src:url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-light.woff2") format("woff2"),
+    url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-light.woff") format("woff"),
+    url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-light.otf") format("opentype");
+    font-style:normal;
+    font-weight:300;
+}
+
+
+
+
+
+@font-face {
+    font-family:"sofia pro";
+    src:url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-regular.woff2") format("woff2"),
+    url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-regular.woff") format("woff"),
+    url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-regular.otf") format("opentype");
+    font-style:normal;
+    font-weight:400;
+}
+
+
+@font-face {
+    font-family:"sofia pro";
+    src:url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-bold.woff2") format("woff2"),
+    url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-bold.woff") format("woff"),
+    url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-bold.otf") format("opentype");
+    font-style:normal;
+    font-weight:700;
+}
+
+@font-face {
+    font-family:"sofia pro";
+    src:url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-black.woff2") format("woff2"),
+    url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-black.woff") format("woff"),
+    url("https://ahmadmorsy.github.io/fonts/sofiapro/sofiapro-black.otf") format("opentype");
+    font-style:normal;
+    font-weight:900;
+}

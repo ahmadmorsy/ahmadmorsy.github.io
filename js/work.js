@@ -1,3 +1,37 @@
+(function() {
+
+  function isElementInViewport(el) {
+    var rect = el.getBoundingClientRect();
+    return rect.top < (window.innerHeight || document.body.clientHeight) &&
+      rect.left < (window.innerWidth || document.body.clientWidth);
+  }
+
+  var handleObjectVisibility = function() {
+    var projects = [];
+
+    projects.forEach.call(document.getElementsByClassName('project'), function(el, i) {
+      if (isElementInViewport(el)) {
+        el.classList.add('loaded');
+
+      } else if (el.hasClass('loaded')) {
+        return;
+      } else {
+       el.classList.remove('loaded');
+      }
+    });
+  };
+
+  window.onload = function() {
+    window.addEventListener('scroll', handleObjectVisibility);
+    handleObjectVisibility();
+  };
+
+})();
+
+
+
+
+
 $(document).ready(function() {
   $('.project').on('click', function() {
     var projectTitle = $(this).find('.project-title').text();
