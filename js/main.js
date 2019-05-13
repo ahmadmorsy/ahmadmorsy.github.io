@@ -36,12 +36,24 @@ $(document).on('click', '.nav-icon', function(e) {
 			if ( $this.hasClass('active') ) {
 				$('body').removeClass('active-nav');
 				$this.removeClass('active');
-        	// $('.nav-cover').css('opacity','0'); 
+        	// $('.nav-cover').css('opacity','0');
 			} else {
 				$this.addClass('active');
 				$('body').addClass('active-nav');
         // $('.nav-cover').css('opacity','1');
-         
+
 			}
 			e.preventDefault();
 		});
+
+
+      window.addEventListener("keydown", event => {
+        if (event.key == "o") {
+          document.body.getElementsByTagName('div').style.outline = "1px solid red";
+        }
+      });
+      window.addEventListener("keyup", event => {
+        if (event.key == "o") {
+          document.body.getElementsByTagName('div').style.outline = "none";
+        }
+      });
