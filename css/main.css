@@ -93,7 +93,9 @@
 	--graphik: "graphik", sans-serif;
 	--manrope: "manrope", sans-serif;
 	--sofiapro: "sofia pro", sans-serif;
-	--gilroy: "gilroy", sans-serif;
+  --gilroy: "gilroy", sans-serif;
+  --harmonia-sans: "HarmoniaSans", sans-serif;
+
 }
 
 [data-theme="dark"] {
@@ -488,45 +490,46 @@ background-position:center top;
 }
 
 
-
 .header-title {
 
   display:flex;
   justify-content: center;
   align-items: center;
   align-content: center;
-  text-align: center;
-  width:240px;
-  height: 100px;
-  padding:40px;
-  position: absolute;
+  /* text-align: center; */
+  width:100%;
+  height: 100vh;
+  position: fixed;
   top: 50%;
   left: 50%;
-  margin-left: -120px;
-  margin-top: -50px;
+  margin-top:-50vh;
+  margin-left:-50%;
   z-index: 1;
-  font-family: var(--graphik);
-  font-weight: 300;
+  
 }
 .header-title span {
   position:relative;
   text-align: center;
-font-size:3rem;
-padding:2px;
-/* letter-spacing: 6px; */
-z-index:6;
-
+  font-family: var(--product-sans);
+  font-weight: 500;
+  text-transform: lowercase;
+  font-size:3rem;
+  padding:2px;
+  z-index:6;
 }
+
 .header-title span:nth-child(odd) {
-	color: #fff;
-	-webkit-animation: flicker 10s linear infinite;
-	animation: flicker 10s linear infinite;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.8),
+	-webkit-animation: flicker 4s linear 2;
+	animation: flicker 4s linear 2;
 }
 
 .header-title span:nth-child(even) {
-	color: #fff;
-	-webkit-animation: flicker 10s linear 3s infinite;
-	animation: flicker 10s linear 3s infinite;
+  color: #fff;
+  text-shadow: -1px -1px 0 rgba(255, 255, 255, 0.8),
+	-webkit-animation: flicker 3s linear 3s 1;
+	animation: flicker 3s linear 3s 1;
 }
 
 @-webkit-keyframes flicker {
