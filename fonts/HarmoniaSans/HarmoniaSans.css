@@ -1,58 +1,56 @@
-/* Harmonia Sans */
 
 @font-face {
 	font-family: 'HarmoniaSans';
-	src: url('../fonts/HarmoniaSans/regular/HarmoniaSansProCyr-Regular.eot');
-	src: url('../fonts/HarmoniaSans/regular/HarmoniaSansProCyr-Regular.otf') format('otf'),
-		url('../fonts/HarmoniaSans/regular/HarmoniaSansProCyr-Regular.woff') format('woff'),
-		url('../fonts/HarmoniaSans/regular/HarmoniaSansProCyr-Regular.ttf') format('truetype'),
-		url('../fonts/HarmoniaSans/regular/HarmoniaSansProCyr-Regular.svg') format('svg');
+	src: url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Regular.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Regular.otf') format('otf'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Regular.woff') format('woff'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Regular.ttf') format('truetype'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Regular.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'HarmoniaSans';
-	src: url('../fonts/HarmoniaSans/bold/HarmoniaSansProCyr-Bold.eot');
-	src: url('../fonts/HarmoniaSans/bold/HarmoniaSansProCyr-Bold.otf') format('otf'),
-		url('../fonts/HarmoniaSans/bold/HarmoniaSansProCyr-Bold.woff') format('woff'),
-		url('../fonts/HarmoniaSans/bold/HarmoniaSansProCyr-Bold.ttf') format('truetype'),
-		url('../fonts/HarmoniaSans/bold/HarmoniaSansProCyr-Bold.svg') format('svg');
+	src: url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Bold.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Bold.otf') format('otf'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Bold.woff') format('woff'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Bold.ttf') format('truetype'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Bold.svg') format('svg');
 	font-weight: bold;
 	font-style: normal;
 }
 
 @font-face {
 	font-family: 'HarmoniaSans';
-	src: url('../fonts/HarmoniaSans/italic/HarmoniaSansProCyr-Italic.eot');
-	src: url('../fonts/HarmoniaSans/italic/HarmoniaSansProCyr-Italic.otf') format('otf'),
-		url('../fonts/HarmoniaSans/italic/HarmoniaSansProCyr-Italic.woff') format('woff'),
-		url('../fonts/HarmoniaSans/italic/HarmoniaSansProCyr-Italic.ttf') format('truetype'),
-		url('../fonts/HarmoniaSans/italic/HarmoniaSansProCyr-Italic.svg') format('svg');
+	src: url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Italic.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Italic.otf') format('otf'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Italic.woff') format('woff'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Italic.ttf') format('truetype'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Italic.svg') format('svg');
 	font-weight: normal;
 	font-style: italic;
 }
 
 @font-face {
 	font-family: 'HarmoniaSans';
-	src: url('../fonts/HarmoniaSans/semibold/HarmoniaSansProCyr-SemiBdCn.eot');
-	src: url('../fonts/HarmoniaSans/semibold/HarmoniaSansProCyr-SemiBdCn.otf') format('otf'),
-		url('../fonts/HarmoniaSans/semibold/HarmoniaSansProCyr-SemiBdCn.woff') format('woff'),
-		url('../fonts/HarmoniaSans/semibold/HarmoniaSansProCyr-SemiBdCn.ttf') format('truetype'),
-		url('../fonts/HarmoniaSans/semibold/HarmoniaSansProCyr-SemiBdCn.svg') format('svg');
+	src: url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-SemiBdCn.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-SemiBdCn.otf') format('otf'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-SemiBdCn.woff') format('woff'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-SemiBdCn.ttf') format('truetype'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-SemiBdCn.svg') format('svg');
 	font-weight: 600;
 	font-style: normal;
 }
 
-/* Harmonia Sans Black */
 
 @font-face {
 	font-family: 'HarmoniaSansBlack';
-	src: url('../fonts/HarmoniaSans/black/HarmoniaSansProCyr-Black.eot');
-	src: url('../fonts/HarmoniaSans/black/HarmoniaSansProCyr-Black.otf') format('otf'),
-		url('../fonts/HarmoniaSans/black/HarmoniaSansProCyr-Black.woff') format('woff'),
-		url('../fonts/HarmoniaSans/black/HarmoniaSansProCyr-Black.ttf') format('truetype'),
-		url('../fonts/HarmoniaSans/black/HarmoniaSansProCyr-Black.svg') format('svg');
+	src: url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Black.eot');
+	src: url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Black.otf') format('otf'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Black.woff') format('woff'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Black.ttf') format('truetype'),
+		url('https://ahmadmorsy.github.io/fonts/HarmoniaSans/HarmoniaSansProCyr-Black.svg') format('svg');
 	font-weight: normal;
 	font-style: normal;
 }
