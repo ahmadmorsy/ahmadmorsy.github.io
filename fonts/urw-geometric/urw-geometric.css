@@ -1,0 +1,81 @@
+@font-face {
+    font-family: "urw-geometric";
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-light.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-light.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-light.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-light.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-light.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 300;
+}
+
+@font-face {
+  font-family: "urw-geometric";
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-regular.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-regular.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-regular.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-regular.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-regular.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 400;
+}
+
+
+@font-face {
+  font-family: "urw-geometric";
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-medium.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-medium.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-medium.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-medium.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-medium.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 500;
+}
+
+
+@font-face {
+  font-family: "urw-geometric";
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-bold.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-bold.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-bold.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-bold.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-bold.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 600;
+}
+
+
+@font-face {
+  font-family: "urw-geometric";
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-extrabold.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-extrabold.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-extrabold.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-extrabold.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-extrabold.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 700;
+}
+
+
+@font-face {
+  font-family: "urw-geometric";
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-black.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-black.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-black.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-black.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-black.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 800;
+}
+
+
+@font-face {
+  font-family: "urw-geometric";
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-heavy.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-heavy.eot?#iefix") format("embedded-opentype"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-heavy.woff2") format("woff2"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-heavy.woff") format("woff"),
+         url("https://ahmadmorsy.github.io/fonts/urw-geometric/urw-geometric-heavy.ttf") format("ttf");
+         font-style: normal;
+    font-weight: 900;
+}
