@@ -88,13 +88,7 @@
  --font-color: #333;
  --bg-color: #fff;
  --heading-color: #111;
-
-	--product-sans: "product sans", sans-serif;
-	--graphik: "graphik", sans-serif;
-	--manrope: "manrope", sans-serif;
-	--sofiapro: "sofia pro", sans-serif;
-  --gilroy: "gilroy", sans-serif;
-  --harmonia-sans: "HarmoniaSans", sans-serif;
+--urw-geometric: "urw-geometric", sans-serif;
 
 }
 
@@ -126,7 +120,7 @@ html {
 html {
   font-weight: 400;
 	font-size:100%;
-  font-family: var(--manrope);
+  font-family: var(--urw-geometric);
   font-style: normal;
 /*   transition: all 0.3s cubic-bezier(0.54, 1, 0.5, 1); */
   background-color: var(--dgray1);
@@ -185,7 +179,7 @@ main {
 	text-align: left;
   width: 100%;
 	font-size:1rem;
-  font-family:var(--graphik);
+  font-family:var(--urw-geometric);
 	line-height: 1.6;
   /* font-weight:600; */
 	color: var(--mgray6);
@@ -204,7 +198,7 @@ h4,
 h5,
 h6 {
   color: var(--lgray6);
-  font-family: var(--graphik);
+  font-family: var(--urw-geometric);
   font-weight: 900;
   line-height: 1.5;
   letter-spacing: -0.04rem;
@@ -510,7 +504,7 @@ background-position:center top;
 .header-title span {
   position:relative;
   text-align: center;
-  font-family: var(--product-sans);
+  font-family: var(--urw-geometric);
   font-weight: 500;
   text-transform: lowercase;
   font-size:3rem;
@@ -716,7 +710,7 @@ main .pgtr-main-content .overscroll-fix {
   /* border-left: 1px solid var(--lgray4); */
   height: 32px;
   font-size: 0.85rem;
-  font-family: var(--manrope);
+  font-family: var(--urw-geometric);
   position: relative;
   text-rendering: optimizeLegibility;
   font-weight: 400;
@@ -2388,7 +2382,7 @@ left: 50%;
 margin-left: -120px;
 margin-top: -50px;
 z-index: 1;
-font-family: var(--graphik);
+font-family: var(--urw-geometric);
 font-weight: 300;
 
 }
