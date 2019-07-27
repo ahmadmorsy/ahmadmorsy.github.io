@@ -1,12 +1,5 @@
-Content Filter
-=========
+# AHMAD MORSY
+## Online Art & Design Portfolio
+---
 
-A slide-in filter panel powered by CSS and jQuery.
-
-[Article on CodyHouse](http://codyhouse.co/gem/content-filter/)
-
-[Demo](http://codyhouse.co/demo/content-filter/index.html)
-
-Filter plugin: [MixItUp](https://github.com/patrickkunka/mixitup) (free to use in non-commercial projects)
- 
-[Terms](http://codyhouse.co/terms/)
+This is my first time to build a website without using site builders or WYSIWYG services. I've been learning HTML, CSS and some Javascript for almost a year. I thought making my own website would be a perfect way to experiment. I hope the final design and functionality match the effort I made.
