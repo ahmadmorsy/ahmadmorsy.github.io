@@ -1,0 +1,42 @@
+@font-face {
+  font-family: 'hurme geometric';
+  src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-light.eot");
+  src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-light.eot?#iefix") format("embedded-opentype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-light.woff") format("woff"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-light.ttf") format("truetype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-light.svg#hurme-geometric") format("svg");
+  font-weight: 300;
+  font-style: normal; }
+
+  @font-face {
+    font-family: 'hurme geometric';
+    src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-regular.eot");
+    src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-regular.eot?#iefix") format("embedded-opentype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-regular.woff") format("woff"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-regular.ttf") format("truetype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-regular.svg#hurme-geometric") format("svg");
+    font-weight: 500;
+    font-style: normal; }
+
+    @font-face {
+      font-family: 'hurme geometric';
+      src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-bold.eot");
+      src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-bold.eot?#iefix") format("embedded-opentype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-bold.woff") format("woff"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-bold.ttf") format("truetype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-bold.svg#hurme-geometric") format("svg");
+      font-weight: 700;
+      font-style: normal; }
+
+      @font-face {
+        font-family: 'hurme geometric';
+        src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-black.eot");
+        src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-black.eot?#iefix") format("embedded-opentype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-black.woff") format("woff"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-black.ttf") format("truetype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-black.svg#hurme-geometric") format("svg");
+        font-weight: 900;
+        font-style: normal; }
+
+        @font-face {
+          font-family: 'hurme geometric';
+          src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-semibold.eot");
+          src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-semibold.eot?#iefix") format("embedded-opentype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-semibold.woff") format("woff"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-semibold.ttf") format("truetype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-semibold.svg#hurme-geometric") format("svg");
+          font-weight: 600;
+          font-style: normal; }
+
+          @font-face {
+            font-family: 'hurme geometric';
+            src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-thin.eot");
+            src: url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-thin.eot?#iefix") format("embedded-opentype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-thin.woff") format("woff"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-thin.ttf") format("truetype"), url("https://ahmadmorsy.github.io/fonts/hurme-geometric/hurme-geometric-thin.svg#hurme-geometric") format("svg");
+            font-weight: 100;
+            font-style: normal; }
+
